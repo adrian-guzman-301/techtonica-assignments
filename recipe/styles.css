@@ -11,3 +11,7 @@ body {
 h1, p {
    color: #F7E20A;
 }
+
+p {
+    max-width: 600px;
+}
