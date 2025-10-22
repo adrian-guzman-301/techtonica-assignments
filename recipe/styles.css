@@ -24,4 +24,5 @@ h1 + p {
 .right {
     max-width: 600px;
     float: left;
+    margin-left: 30px;
 }
