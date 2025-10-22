@@ -20,3 +20,8 @@ h1 + p {
     max-width: 600px;
     float: left;
 } 
+
+.right {
+    max-width: 600px;
+    float: left;
+}
