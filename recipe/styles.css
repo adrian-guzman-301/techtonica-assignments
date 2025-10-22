@@ -12,6 +12,10 @@ h1, p {
    color: #F7E20A;
 }
 
-p {
+h1 + p {
     max-width: 600px;
 }
+
+.left{
+    max-width: 600px;
+} 
