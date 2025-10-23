@@ -16,13 +16,12 @@ h1 + p {
     max-width: 600px;
 }
 
-.left{
+.left ul {
     max-width: 600px;
     float: left;
 } 
 
-.right {
+.right ol {
     max-width: 600px;
     float: left;
-    margin-left: 30px;
 }
