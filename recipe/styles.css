@@ -4,6 +4,14 @@
   font-style: normal;
 }
 
+a:link {
+    color: greenyellow
+}
+
+a:visited {
+    color: orange
+}
+
 body {
     background-color: #8A6043;
 }
