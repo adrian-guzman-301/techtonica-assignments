@@ -24,12 +24,8 @@ h1, p {
     max-width: 600px;
 }
 
-.left ul {
-    max-width: 600px;
-    float: left;
-} 
-
-.right ol {
+.left {
     max-width: 600px;
     float: left;
 }
+
