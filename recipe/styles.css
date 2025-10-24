@@ -20,7 +20,7 @@ h1, p {
    color: #F7E20A;
 }
 
-h1 + p {
+.description {
     max-width: 600px;
 }
 
