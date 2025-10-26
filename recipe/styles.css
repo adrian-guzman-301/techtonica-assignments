@@ -4,25 +4,34 @@
   font-style: normal;
 }
 
+a:link {
+    color: greenyellow
+}
+
+a:visited {
+    color: orange
+}
+
 body {
     background-color: #8A6043;
 }
 
-h1, p {
+h1, h2, p {
    color: #F7E20A;
 }
 
-h1 + p {
+.description {
     max-width: 600px;
 }
 
-.left{
+.left {
     max-width: 600px;
     float: left;
-} 
+}
 
 .right {
     max-width: 600px;
     float: left;
     margin-left: 30px;
+    margin-top: -26px;
 }
