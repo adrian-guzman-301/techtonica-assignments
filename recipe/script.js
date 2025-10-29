@@ -1,1 +1,1 @@
-document.title = "Do Not Eat This 🤮🤮🤮🤮🤮";
+document.querySelector('title').innerText = 'Do Not Eat This 🤮🤮🤮🤮🤮'
