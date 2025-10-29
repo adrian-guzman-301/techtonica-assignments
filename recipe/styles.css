@@ -21,6 +21,10 @@ h1, h2, p {
    color: #F7E20A;
 }
 
+.btn-warning {
+    color: white
+}
+
 .description {
     max-width: 600px;
 }
