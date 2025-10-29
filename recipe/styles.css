@@ -21,8 +21,8 @@ h1, h2, p {
    color: #F7E20A;
 }
 
-.btn-warning {
-    color: white
+.killer-link, .disgusting-link {
+    color: white;
 }
 
 .description {
