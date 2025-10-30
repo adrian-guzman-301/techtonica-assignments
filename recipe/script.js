@@ -19,3 +19,8 @@ checkbox.id = "id";
 
 //assign attributes for created label tag
 label.htmlFor = "id";
+
+//append created text to created label tag
+label.appendChild(
+    document.createTextNode("This creates the checkbox label")
+)
