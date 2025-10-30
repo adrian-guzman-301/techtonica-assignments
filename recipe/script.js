@@ -40,5 +40,5 @@ for(let i = 0; i < groceryList.length; i++) {
     let listItem = groceryList[i]
     let checkbox = document.createElement('input')
     checkbox.type = 'checkbox'
-    listItem.appendChild(checkbox)
+    listItem.prepend(checkbox)
 }

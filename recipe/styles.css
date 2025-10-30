@@ -20,6 +20,10 @@ h1, h2, p {
    color: #F7E20A;
 }
 
+.ingredientList {
+    list-style-type: none;
+}
+
 .description {
     max-width: 600px;
 }
