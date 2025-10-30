@@ -34,3 +34,4 @@ document.title = "Do Not Eat This 🤮🤮🤮🤮🤮";
 // myDiv.appendChild(checkbox);
 // myDiv.appendChild(label);
 
+let groceryList = document.querySelectorAll('ul > li');
