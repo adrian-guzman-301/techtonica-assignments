@@ -38,4 +38,5 @@ let groceryList = document.querySelectorAll('ul > li');
 
 for(let i = 0; i < groceryList.length; i++) {
     let listItem = groceryList[i]
+    let checkbox = document.createElement('input')
 }
