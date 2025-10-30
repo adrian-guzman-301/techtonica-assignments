@@ -35,3 +35,7 @@ h1, h2, p {
     margin-left: 30px;
     margin-top: -26px;
 }
+
+.checked {
+    text-decoration: line-through;
+}
