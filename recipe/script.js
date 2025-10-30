@@ -8,4 +8,8 @@ document.querySelector('ul').appendChild(newListItem)
 
 const myDiv = document.getElementById("myDiv")
 
+//create checkbox element
 let checkbox = document.createElement("input")
+
+//assigning attributes to created checkbox
+checkbox.type = "checkbox";
