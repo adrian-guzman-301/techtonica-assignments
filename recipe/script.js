@@ -13,3 +13,4 @@ let checkbox = document.createElement("input")
 
 //assigning attributes to created checkbox
 checkbox.type = "checkbox";
+checkbox.name = "name";
