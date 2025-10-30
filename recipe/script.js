@@ -35,3 +35,7 @@ document.title = "Do Not Eat This 🤮🤮🤮🤮🤮";
 // myDiv.appendChild(label);
 
 let groceryList = document.querySelectorAll('ul > li');
+
+for(let i = 0; i < groceryList.length; i++) {
+
+}
