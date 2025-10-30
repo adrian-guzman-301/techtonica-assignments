@@ -2,7 +2,7 @@ document.title = "Do Not Eat This 🤮🤮🤮🤮🤮";
 
 let newListItem = document.createElement('li')
 
-newListItem.textContent = '1 tablespoon of warm canned clam juice'
+newListItem.textContent = '1 tablespoon of warm canned clam juice (optional, for better gagging)'
 
 document.querySelector('ul').appendChild(newListItem)
 
@@ -16,6 +16,9 @@ checkbox.type = "checkbox";
 checkbox.name = "name";
 checkbox.value = "value";
 checkbox.id = "id";
+
+//create label for checkbox
+let label = document.createElement("label");
 
 //assign attributes for created label tag
 label.htmlFor = "id";
