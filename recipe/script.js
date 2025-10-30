@@ -16,3 +16,6 @@ checkbox.type = "checkbox";
 checkbox.name = "name";
 checkbox.value = "value";
 checkbox.id = "id";
+
+//assign attributes for created label tag
+label.htmlFor = "id";
