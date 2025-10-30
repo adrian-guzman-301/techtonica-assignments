@@ -27,3 +27,4 @@ label.appendChild(
 
 //append checkbox and label to div
 myDiv.appendChild(checkbox);
+myDiv.appendChild(label);
