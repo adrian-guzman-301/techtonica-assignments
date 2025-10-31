@@ -25,4 +25,19 @@ h1 + p {
     max-width: 600px;
     float: left;
     margin-left: 30px;
+    margin-top: -26px;
+}
+
+.checked {
+    text-decoration: line-through;
+    text-decoration-thickness: 3px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 900px) {
+  body {
+    background-color: #F7E20A
+  }
+  h1, h2, p {
+   color: #8A6043
+}
 }
