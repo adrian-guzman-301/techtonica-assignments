@@ -34,10 +34,19 @@ button.addEventListener('click', renderAcaiBowl)
     //change image
     document.querySelector('img').src = 'acai.webp'
     //change image photo credit link
-    document.querySelector('cite > a').href = 'https://assets3.thrillist.com/v1/image/1820619/1536x1024/crop;webp=auto;jpeg_quality=60;progressive.jpg'
+    document.querySelector('cite > a').href = 'https://bobbyfisherphoto.com/appetites'
     //change image photo credit text
-    
+    document.querySelector('cite > a').innerText = 'Bobby Fisher'
     //change ingredients
+    document.querySelector('ul > li').innerText = '1/2 to 3/4 cup acai juice'
+    document.querySelector('ul > li + li').innerText = '2 bananas, peeled'
+    document.querySelector('ul > li + li + li').innerText = '7 ounces frozen unsweetened acai puree'
+    document.querySelector('ul > li + li + li + li').innerText = '3/4 cup frozen blueberries'
+    document.querySelector('ul > li + li + li + li + li').innerText = '1/4 to 1/2 cup fresh or frozen stawberries or raspberries'
+    document.querySelector('ul > li + li + li + li + li + li').innerText = '1/2 bup granola, for garnish (optional)'
+    document.querySelector('ul > li + li + li + li + li + li + li').innerText = '1/4 cup cacao nibs, for garnish (optional)'
+    //
+    //add checkboxes with strikethrough toggle
     //change directions
     //change external links
     //change background color
