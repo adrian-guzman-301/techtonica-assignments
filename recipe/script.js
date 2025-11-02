@@ -22,3 +22,10 @@ for(let i = 0; i < groceryList.length; i++) {
     }
   }
 }
+
+//button
+const button = document.querySelector('button')
+button.addEventListener('click', renderAcaiBowl) 
+  function renderAcaiBowl() {
+    document.querySelector('h1').innerText = 'Acai Bowl'
+  }
