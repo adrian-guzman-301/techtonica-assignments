@@ -33,8 +33,15 @@ button.addEventListener('click', renderAcaiBowl)
     document.querySelector('.description').innerText = 'This miracle jungle fruit of the Amazon is the cure for everything and whether this claim holds up to scientific scutiny or not, the stuff is pretty delicious.'
     //change image
     document.querySelector('img').src = 'acai.webp'
-    //change image photo credit
+    //change image photo credit link
+    document.querySelector('cite > a').href = 'https://assets3.thrillist.com/v1/image/1820619/1536x1024/crop;webp=auto;jpeg_quality=60;progressive.jpg'
+    //change image photo credit text
+    
     //change ingredients
     //change directions
     //change external links
+    //change background color
+    //change body font style
+    //change link unclicked colors
+    //change link clicked colors
   }
