@@ -39,6 +39,7 @@ h1, h2, p {
 .checked {
     text-decoration: line-through;
     text-decoration-thickness: 3px;
+    text-decoration-color: #F7E20A;
 }
 
 @media screen and (min-width: 280px) and (max-width: 900px) {
