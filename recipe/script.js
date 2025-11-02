@@ -6,6 +6,7 @@ newListItem.textContent = '1 tablespoon of warm canned clam juice (optional, for
 
 document.querySelector('ul').appendChild(newListItem)
 
+//checkboxes
 let groceryList = document.querySelectorAll('ul > li');
 
 for(let i = 0; i < groceryList.length; i++) {
@@ -45,7 +46,8 @@ button.addEventListener('click', renderAcaiBowl)
     document.querySelector('ul > li + li + li + li + li').innerText = '1/4 to 1/2 cup fresh or frozen stawberries or raspberries'
     document.querySelector('ul > li + li + li + li + li + li').innerText = '1/2 bup granola, for garnish (optional)'
     document.querySelector('ul > li + li + li + li + li + li + li').innerText = '1/4 cup cacao nibs, for garnish (optional)'
-    //
+    //change newListItem text
+    newListItem.textContent = 'RIP Anthony Bourdain'
     //add checkboxes with strikethrough toggle
     //change directions
     //change external links
