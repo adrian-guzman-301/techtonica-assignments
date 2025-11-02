@@ -49,6 +49,22 @@ button.addEventListener('click', renderAcaiBowl)
     //change newListItem text
     newListItem.textContent = 'RIP Anthony Bourdain'
     //add checkboxes with strikethrough toggle
+    let groceryList = document.querySelectorAll('ul > li');
+    // - 1 to pay respects to anthony bourdain
+    for(let i = 0; i < groceryList.length - 1; i++) {
+      let listItem = groceryList[i]
+      let checkbox = document.createElement('input')
+      checkbox.type = 'checkbox'
+      listItem.prepend(checkbox)
+      checkbox.addEventListener('click', toggleStrikethrough)
+      function toggleStrikethrough() {
+      if(checkbox.checked) {
+      checkbox.parentNode.classList.add('checked') 
+        } else {
+      checkbox.parentNode.classList.remove('checked')
+        }
+      }
+    }
     //change directions
     //change external links
     //change background color
