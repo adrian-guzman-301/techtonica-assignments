@@ -42,6 +42,11 @@ h1, h2, p {
     text-decoration-color: #F7E20A;
 }
 
+button {
+  color: orange;
+  background-color: #8A6043;
+  border-color: #F7E20A;
+}
 
 @media screen and (min-width: 280px) and (max-width: 900px) {
   body {
