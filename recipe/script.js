@@ -28,4 +28,5 @@ const button = document.querySelector('button')
 button.addEventListener('click', renderAcaiBowl) 
   function renderAcaiBowl() {
     document.querySelector('h1').innerText = 'Acai Bowl'
+    document.querySelector('.description').innerText = 'This miracle jungle fruit of the Amazon is the cure for everything and whether this claim holds up to scientific scutiny or not, the stuff is pretty delicious.'
   }
