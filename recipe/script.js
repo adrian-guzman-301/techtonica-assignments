@@ -78,8 +78,12 @@ button.addEventListener('click', renderAcaiBowl)
     document.querySelector('body').style.backgroundColor = 'rgb(40, 28, 30)' 
     //change main heading text color
     document.querySelector('h1').style.color = 'rgb(206, 179, 135)'
-    //change remaining headings text color
-    
+    //change all h2-level heading text color
+    let everyH2 = document.querySelectorAll('h2')
+    for(let i = 0; i < everyH2.length; i++) {
+      const h2 = everyH2[i]
+      h2.style.color = 'rgb(206, 179, 135)'
+    }
     //change description text color
     //change all list items text color
     //change link unclicked colors
