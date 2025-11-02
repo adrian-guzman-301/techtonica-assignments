@@ -32,7 +32,7 @@ button.addEventListener('click', renderAcaiBowl)
     document.querySelector('h1').innerText = 'Acai Bowl'
     //change ingredients heading text
     //change tab text
-    //change description
+    //change description text
     document.querySelector('.description').innerText = 'This miracle jungle fruit of the Amazon is the cure for everything and whether this claim holds up to scientific scutiny or not, the stuff is pretty delicious.'
     //change image
     document.querySelector('img').src = 'acai.webp'
@@ -85,7 +85,9 @@ button.addEventListener('click', renderAcaiBowl)
       h2.style.color = 'rgb(206, 179, 135)'
     }
     //change description text color
+     document.querySelector('.description').style.color = 'rgb(206, 179, 135)'
     //change all list items text color
+    //change photo credit text color
     //change link unclicked colors
     //change link clicked colors
     //change body font style
