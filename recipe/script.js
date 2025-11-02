@@ -76,10 +76,14 @@ button.addEventListener('click', renderAcaiBowl)
     document.querySelector('ol > li + li + li + li + li').insertAdjacentElement('afterend', document.createElement('li')).innerText = 'Top each bowl with garnishes. Serve Immediately.'
     //change background color
     document.querySelector('body').style.backgroundColor = 'rgb(40, 28, 30)' 
-    //change body font style
-    //change headings text color
+    //change main heading text color
+    document.querySelector('h1').style.color = 'rgb(206, 179, 135)'
+    //change remaining headings text color
+    
     //change description text color
+    //change all list items text color
     //change link unclicked colors
     //change link clicked colors
+    //change body font style
     //change other recipe links src attributes
   }
