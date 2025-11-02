@@ -30,6 +30,8 @@ button.addEventListener('click', renderAcaiBowl)
   function renderAcaiBowl() {
     //change h1
     document.querySelector('h1').innerText = 'Acai Bowl'
+    //change ingredients heading text
+    //change tab text
     //change description
     document.querySelector('.description').innerText = 'This miracle jungle fruit of the Amazon is the cure for everything and whether this claim holds up to scientific scutiny or not, the stuff is pretty delicious.'
     //change image
@@ -44,14 +46,13 @@ button.addEventListener('click', renderAcaiBowl)
     document.querySelector('ul > li + li + li').innerText = '7 ounces frozen unsweetened acai puree'
     document.querySelector('ul > li + li + li + li').innerText = '3/4 cup frozen blueberries'
     document.querySelector('ul > li + li + li + li + li').innerText = '1/4 to 1/2 cup fresh or frozen stawberries or raspberries'
-    document.querySelector('ul > li + li + li + li + li + li').innerText = '1/2 bup granola, for garnish (optional)'
+    document.querySelector('ul > li + li + li + li + li + li').innerText = '1/2 cup granola, for garnish (optional)'
     document.querySelector('ul > li + li + li + li + li + li + li').innerText = '1/4 cup cacao nibs, for garnish (optional)'
-    //change newListItem text
-    newListItem.textContent = 'RIP Anthony Bourdain'
-    //add checkboxes with strikethrough toggle
+    //change newListItem text content
+    newListItem.textContent = 'Vitamix or another blender with a fairly strong motor'
+    //add checkboxes to each list ingredient list item with strikethrough toggle
     let groceryList = document.querySelectorAll('ul > li');
-    // - 1 to pay respects to anthony bourdain
-    for(let i = 0; i < groceryList.length - 1; i++) {
+    for(let i = 0; i < groceryList.length; i++) {
       let listItem = groceryList[i]
       let checkbox = document.createElement('input')
       checkbox.type = 'checkbox'
@@ -66,6 +67,13 @@ button.addEventListener('click', renderAcaiBowl)
       }
     }
     //change directions
+    document.querySelector('ol > li').innerText = 'Place acai juice and 1 banana in blender pitcher'
+    document.querySelector('ol > li + li').innerText = 'Add forzen acai puree, blueberries, and strawberries on top so blender blades suck in the frozen items'
+    document.querySelector('ol > li + li + li').innerText = 'Pulse as needed to form a smooth sorbet, scraping down blender pitcher sides with a spatula if necessary'
+    document.querySelector('ol > li + li + li + li').innerText = 'Slice remaining banana'
+    document.querySelector('ol > li + li + li +li + li').innerText = 'Divide mixture between two bowls'
+    //add new direction list item
+    document.querySelector('ol > li + li + li + li + li').insertAdjacentElement('afterend', document.createElement('li')).innerText = 'Top each bowl with garnishes. Serve Immediately.'
     //change external links
     //change background color
     //change body font style
