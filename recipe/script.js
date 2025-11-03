@@ -87,7 +87,13 @@ button.addEventListener('click', renderAcaiBowl)
     //change description text color
      document.querySelector('.description').style.color = 'rgb(206, 179, 135)'
     //change all list items text color
+    let everyListItem = document.querySelectorAll('li')
+    for(let i = 0; i < everyListItem.length; i++) {
+      const li = everyListItem[i]
+      li.style.color = 'rgb(224, 219, 221)'
+    }
     //change photo credit text color
+    document.querySelector('div.left > div > p').style.color = 'rgb(206, 179, 135)'
     //change link unclicked colors
     //change link clicked colors
     //change body font style
