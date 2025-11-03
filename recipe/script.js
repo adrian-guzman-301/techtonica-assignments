@@ -102,8 +102,13 @@ button.addEventListener('click', renderAcaiBowl)
     })
     //change h1 font style
     document.querySelector('h1').classList.add('permanent-marker-regular')
-    //change link unclicked colors
-    //change link clicked colors
-    //change strikethrough color
-    //change other recipe links src attributes
+    //change link unclicked colors--need help
+
+    //change link clicked colors--need help
+
+    //change external recipe link text
+    document.querySelector('div > p > a').innerText = 'test'
+    document.getElementById('second-link').innerText = 'test 2'
+    //change external recipe link src's
+    
   }
