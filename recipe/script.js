@@ -95,7 +95,9 @@ button.addEventListener('click', renderAcaiBowl)
     //change photo credit text color
     document.querySelector('div.left > div > p').style.color = 'rgb(206, 179, 135)'
     //change link unclicked colors
+    document.getElementsByClassName
     //change link clicked colors
+    //change strikethrough color
     //change body font style
     //change other recipe links src attributes
   }
