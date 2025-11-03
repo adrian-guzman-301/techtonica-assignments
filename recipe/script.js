@@ -95,9 +95,13 @@ button.addEventListener('click', renderAcaiBowl)
     }
     //change photo credit text color
     document.querySelector('div.left > div > p').style.color = 'rgb(206, 179, 135)'
+    //change body font style
+    const everyElement = document.querySelectorAll('*:not(#recipe-title)')
+    everyElement.forEach((element) => {
+      element.classList.add('indie-flower-regular')
+    })
     //change h1 font style
     document.querySelector('h1').classList.add('permanent-marker-regular')
-    //change body font style
     //change link unclicked colors
     //change link clicked colors
     //change strikethrough color
