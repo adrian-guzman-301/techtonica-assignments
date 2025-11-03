@@ -107,8 +107,9 @@ button.addEventListener('click', renderAcaiBowl)
     //change link clicked colors--need help
 
     //change external recipe link text
-    document.querySelector('div > p > a').innerText = 'test'
-    document.getElementById('second-link').innerText = 'test 2'
+    document.querySelector('div > p > a').innerText = 'Dragon Fruit Bowl'
+    document.getElementById('second-link').innerText = 'Mango Smoothie Bowl'
     //change external recipe link src's
-    
+    document.querySelector('div > p > a').href = 'https://minimalistbaker.com/creamy-dragon-fruit-smoothie-bowl/'
+    document.getElementById('second-link').href = 'https://downshiftology.com/recipes/mango-smoothie-bowl/'
   }
