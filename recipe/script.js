@@ -112,4 +112,6 @@ button.addEventListener('click', renderAcaiBowl)
     //change external recipe link href's
     document.querySelector('div > p > a').href = 'https://minimalistbaker.com/creamy-dragon-fruit-smoothie-bowl/'
     document.getElementById('second-link').href = 'https://downshiftology.com/recipes/mango-smoothie-bowl/'
+    //hide button
+    document.querySelector('button').classList.add('hide-button')
   }
