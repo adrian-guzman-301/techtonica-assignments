@@ -30,8 +30,8 @@ button.addEventListener('click', renderAcaiBowl)
   function renderAcaiBowl() {
     //change h1
     document.querySelector('h1').innerText = 'Acai Bowl'
-    //change ingredients heading text
     //change tab text
+    document.title = "Eat This 😋🥣🫐🍓💜🍌"
     //change description text
     document.querySelector('.description').innerText = 'This miracle jungle fruit of the Amazon is the cure for everything and whether this claim holds up to scientific scutiny or not, the stuff is pretty delicious.'
     //change image
@@ -95,21 +95,21 @@ button.addEventListener('click', renderAcaiBowl)
     }
     //change photo credit text color
     document.querySelector('div.left > div > p').style.color = 'rgb(206, 179, 135)'
-    //change body font style
+    //change body font style except for h1
     const everyElement = document.querySelectorAll('*:not(#recipe-title)')
     everyElement.forEach((element) => {
       element.classList.add('indie-flower-regular')
     })
     //change h1 font style
     document.querySelector('h1').classList.add('permanent-marker-regular')
-    //change link unclicked colors--need help
+    //change link unvisited colors--need help
 
-    //change link clicked colors--need help
+    //change link visited colors--need help
 
     //change external recipe link text
     document.querySelector('div > p > a').innerText = 'Dragon Fruit Bowl'
     document.getElementById('second-link').innerText = 'Mango Smoothie Bowl'
-    //change external recipe link href's
+    //change external recipe link destinations
     document.querySelector('div > p > a').href = 'https://minimalistbaker.com/creamy-dragon-fruit-smoothie-bowl/'
     document.getElementById('second-link').href = 'https://downshiftology.com/recipes/mango-smoothie-bowl/'
     //hide button
