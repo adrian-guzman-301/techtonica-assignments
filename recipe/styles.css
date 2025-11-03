@@ -45,7 +45,7 @@ h1, h2, p {
 .acaiChecked {
   text-decoration: line-through;
     text-decoration-thickness: 3px;
-    text-decoration-color: #F7E20A;
+    text-decoration-color: rgb(206, 179, 135);
 }
 
 button {

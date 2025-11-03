@@ -60,9 +60,10 @@ button.addEventListener('click', renderAcaiBowl)
       checkbox.addEventListener('click', toggleStrikethrough)
       function toggleStrikethrough() {
       if(checkbox.checked) {
-      checkbox.parentNode.classList.add('checked') 
+      //change line-through color with acaiChecked class
+      checkbox.parentNode.classList.add('acaiChecked') 
         } else {
-      checkbox.parentNode.classList.remove('checked')
+      checkbox.parentNode.classList.remove('acaiChecked')
         }
       }
     }
