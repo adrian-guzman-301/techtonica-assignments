@@ -50,7 +50,7 @@ button.addEventListener('click', renderAcaiBowl)
     document.querySelector('ul > li + li + li + li + li + li + li').innerText = '1/4 cup cacao nibs, for garnish (optional)'
     //change newListItem text content
     newListItem.textContent = 'Vitamix or another blender with a fairly strong motor'
-    //add checkboxes to each list ingredient list item with strikethrough toggle
+    //add checkboxes to each ingredient list item with strikethrough toggle
     let groceryList = document.querySelectorAll('ul > li');
     for(let i = 0; i < groceryList.length; i++) {
       let listItem = groceryList[i]
@@ -69,7 +69,7 @@ button.addEventListener('click', renderAcaiBowl)
     }
     //change directions
     document.querySelector('ol > li').innerText = 'Place acai juice and 1 banana in blender pitcher'
-    document.querySelector('ol > li + li').innerText = 'Add frozen acai puree, blueberries, and strawberries on top so blender blades suck in the frozen items'
+    document.querySelector('ol > li + li').innerText = 'Add frozen acai puree, blueberries, and strawberries on top so rotating blender blades suck in frozen items'
     document.querySelector('ol > li + li + li').innerText = 'Pulse as needed to form a smooth sorbet, scraping down blender pitcher sides with a spatula if necessary'
     document.querySelector('ol > li + li + li + li').innerText = 'Slice remaining banana'
     document.querySelector('ol > li + li + li +li + li').innerText = 'Divide mixture between two bowls'
@@ -95,10 +95,11 @@ button.addEventListener('click', renderAcaiBowl)
     }
     //change photo credit text color
     document.querySelector('div.left > div > p').style.color = 'rgb(206, 179, 135)'
+    //change h1 font style
+    document.querySelector('h1').classList.add('permanent-marker-regular')
+    //change body font style
     //change link unclicked colors
-    document.getElementsByClassName
     //change link clicked colors
     //change strikethrough color
-    //change body font style
     //change other recipe links src attributes
   }
