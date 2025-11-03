@@ -109,7 +109,7 @@ button.addEventListener('click', renderAcaiBowl)
     //change external recipe link text
     document.querySelector('div > p > a').innerText = 'Dragon Fruit Bowl'
     document.getElementById('second-link').innerText = 'Mango Smoothie Bowl'
-    //change external recipe link src's
+    //change external recipe link href's
     document.querySelector('div > p > a').href = 'https://minimalistbaker.com/creamy-dragon-fruit-smoothie-bowl/'
     document.getElementById('second-link').href = 'https://downshiftology.com/recipes/mango-smoothie-bowl/'
   }
