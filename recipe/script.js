@@ -33,7 +33,7 @@ button.addEventListener('click', renderAcaiBowl)
     //change tab text
     document.title = "Eat This 😋🥣🫐🍓💜🍌"
     //change description text
-    document.querySelector('.description').innerText = 'This miracle jungle fruit of the Amazon is the cure for everything and whether this claim holds up to scientific scutiny or not, the stuff is pretty delicious.'
+    document.querySelector('.description').innerText = 'This miracle jungle fruit of the Amazon is the cure for everything and whether this claim holds up to scientific scrutiny or not, the stuff is pretty delicious.'
     //change image
     document.querySelector('img').src = 'acai.webp'
     //change image photo credit link
