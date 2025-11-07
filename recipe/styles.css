@@ -4,8 +4,20 @@
   font-style: normal;
 }
 
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 a:link {
-    color: greenyellow
+    color: rgb(246, 130, 136)
 }
 
 a:visited {
@@ -39,6 +51,23 @@ h1, h2, p {
 .checked {
     text-decoration: line-through;
     text-decoration-thickness: 3px;
+    text-decoration-color: #F7E20A;
+}
+
+.acaiChecked {
+  text-decoration: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgb(206, 179, 135);
+}
+
+button {
+  color: orange;
+  background-color: #8A6043;
+  border-color: #F7E20A;
+}
+
+.hide-button {
+  display: none;
 }
 
 @media screen and (min-width: 280px) and (max-width: 900px) {
@@ -47,5 +76,5 @@ h1, h2, p {
   }
   h1, h2, p {
    color: #8A6043
-}
+  }
 }
