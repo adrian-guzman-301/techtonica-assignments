@@ -10,6 +10,14 @@
   font-style: normal;
 }
 
+banana-color {
+  color: rgb(206, 179, 135);
+}
+
+acai-color {
+  color: rgb(224, 219, 221);
+}
+
 .permanent-marker-regular {
   font-family: "Permanent Marker", cursive;
   font-weight: 400;

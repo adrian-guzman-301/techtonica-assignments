@@ -102,9 +102,6 @@ button.addEventListener('click', renderAcaiBowl)
     })
     //change h1 font style
     document.querySelector('h1').classList.add('permanent-marker-regular')
-    //change link unvisited colors--need help
-
-    //change link visited colors--need help
 
     //change external recipe link text
     document.querySelector('div > p > a').innerText = 'Dragon Fruit Bowl'
