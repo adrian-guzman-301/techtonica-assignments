@@ -8,3 +8,19 @@ img {
   border: 1px dashed red;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.column {
+  flex: 1;
+  padding: 5px;
+  border: 1px;
+  box-sizing: border-box;
+}
+
+.right-column {
+  margin-top: 60px;
+}
