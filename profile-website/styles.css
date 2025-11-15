@@ -1,11 +1,11 @@
 body {
-  color: red;
+  color: black;
   font-family: 'Courier New', Courier, monospace;
   font-display: auto;
 }
 
 img {
-  border: 1px dashed red;
+  border: 1px dashed black;
 }
 
 .container {
@@ -23,6 +23,14 @@ img {
 
 .right-column {
   margin-top: 60px;
+}
+
+.override-image {
+  border: 2px solid red
+}
+
+.override-body {
+  color: red;
 }
 
 /* 3 web design patterns to implement:
