@@ -38,3 +38,10 @@ img {
   2. icons of programming languages/concepts i know
   3. side-scrolling images (can be of project screenshots or of other things?)
 */
+
+@media(max-width: 859px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
