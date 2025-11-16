@@ -40,7 +40,7 @@ img {
   3. side-scrolling images (can be of project screenshots or of other things?)
 */
 
-@media(max-width: 859px) {
+@media(max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
