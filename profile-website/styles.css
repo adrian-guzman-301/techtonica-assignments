@@ -6,6 +6,7 @@ body {
 
 img {
   border: 1px dashed black;
+  max-width: 200px;
 }
 
 .container {
