@@ -46,3 +46,24 @@ img {
     flex-direction: column;
   }
 }
+
+@media(min-width: 800px) {
+  .container {
+    display: inline;
+  }
+  h1 {
+    display: block;
+    width: 8%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .override-image {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .right-column {
+    margin-top: -20px;
+  }
+
+}
