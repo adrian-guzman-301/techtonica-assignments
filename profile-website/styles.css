@@ -1,0 +1,74 @@
+body {
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-display: auto;
+}
+
+img {
+  border: 1px dashed black;
+  max-width: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.column {
+  flex: 1;
+  padding: 5px;
+  border: 1px;
+  box-sizing: border-box;
+}
+
+.right-column {
+  margin-top: 60px;
+}
+
+.override-image {
+  border: 2px solid red
+}
+
+.override-body {
+  color: red;
+}
+
+/* 3 web design patterns to implement:
+  1. horizontal navbar with hover effects over links
+  2. icons of programming languages/concepts i know
+  3. side-scrolling images (can be of project screenshots or of other things?)
+*/
+
+@media(max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media(min-width: 800px) {
+  .container {
+    display: inline;
+  }
+  h1 {
+    display: block;
+    width: 8%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .override-image {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .right-column {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 20px;
+  }
+}
