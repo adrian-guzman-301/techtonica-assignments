@@ -52,7 +52,7 @@ img {
   }
 }
 
-@media(min-width: 800px) {
+@media(min-width: 1700px) {
   .container {
     display: inline;
   }
