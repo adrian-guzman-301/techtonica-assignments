@@ -35,6 +35,10 @@ img {
   color: red;
 }
 
+#github-logo, #linkedin-logo {
+  max-width: 100px;
+}
+
 /* 3 web design patterns to implement:
   1. horizontal navbar with hover effects over links
   2. icons of programming languages/concepts i know
