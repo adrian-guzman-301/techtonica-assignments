@@ -28,11 +28,11 @@ img {
 }
 
 .override-image {
-  border: 2px solid red
+  border: 2px solid #B40000
 }
 
 .override-body {
-  color: red;
+  color: #B40000;
 }
 
 #github-logo, #linkedin-logo {
