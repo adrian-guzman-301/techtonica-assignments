@@ -1,11 +1,12 @@
+//this modal code retrieved from w3schools
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+let btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
@@ -22,4 +23,12 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+//Trigger Dark Red Mode
+document.getElementById('dark-red-mode-button').addEventListener('click', renderDarkRedMode);
+
+function renderDarkRedMode() {
+  const body = document.querySelector('body');
+  body.classList.add('dark-red-mode');
 }

@@ -113,3 +113,8 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
+
+.dark-red-mode {
+  background-color: #B40000;
+  color: white;
+}

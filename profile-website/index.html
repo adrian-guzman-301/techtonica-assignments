@@ -28,19 +28,22 @@
 </head>
 <body class="override-body">
   <!-- Trigger/Open The Modal -->
-<button id="myBtn">Secret Message</button>
+  <button id="myBtn">Secret Message</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+  <!-- Dark Red Mode -->
+  <button id="dark-red-mode-button">Dark Red Mode</button>
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <img src="kiki.jpg" alt="an indoor cat named kiki">
-    <p>Hello! My name is Kiki. I am an indoor cat but am just beginning to get a feel for the outdoors. I can go outside when it's really quiet and really dark since I am very sensitive to harsh external stimuli (unless there's a bird I can stalk!). I like eating really fast so I am forced to eat out of a special eat-slower bowl. I don't like it but I'm used to it now. I <em>love</em> drinking water, almost as much as being carried and petted.</p> 
-    <p>Click anywhere outside this box or on the <em>x</em> to make me go away.</p>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="kiki.jpg" alt="an indoor cat named kiki">
+      <p>Hello! My name is Kiki and I live with Adrian. I'm an indoor cat but am just beginning to get a feel for the outdoors. I can go outside when it's really quiet and really dark since I am very sensitive to harsh external stimuli (unless there's a bird I can stalk!). I like eating really fast so I am forced to eat out of a special eat-slower bowl. I don't like it but I'm used to it now. I <em>love</em> drinking water, almost as much as being carried and petted.</p> 
+      <p>Click anywhere outside this box or on the <em>x</em> to make me go away.</p>
+    </div>
   </div>
-</div>
 <!-- non-modal content -->
   <div class="container">
     <header class="column left-column">
@@ -65,10 +68,12 @@
         <input type="text" id="mailing-address"><br>
         <input type="submit" value="Submit">
       </form>
-      <p id="socials">Let's also connect on LinkedIn and GitHub!:</p>
+        <p id="socials">Let's also connect on LinkedIn and GitHub!:</p>
         <a id="github-link" href="https://github.com/adrian-guzman-301" aria-label="Adrian's LinkedIn Profile"><img
         id="github-logo" src="github-logo.png" alt=""></a>
         <a id="linkedin-link" href="https://www.linkedin.com/in/adrian-wuz-here/" aria-label="Adrian's GitHub Profile"><img id="linkedin-logo" src="linkedin-logo.png" alt=""></a>
+        <label for="appointment-time">Let's have a coffee chat:</label>
+        <input type="datetime-local" id="appointment-time" name="appointment-time">
     </section>
   </div>
   <script src="script.js"></script>
