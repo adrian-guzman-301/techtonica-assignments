@@ -75,7 +75,7 @@ img {
     font-size: 20px;
   }
 }
-
+/* modal code from w3schools
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -113,8 +113,12 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
-
+/*class for dark mode button*/
 .dark-red-mode {
   background-color: #B40000;
   color: white;
+}
+
+.coffee-chat {
+  display:
 }
