@@ -2,6 +2,16 @@ let song = document.getElementById('song');
 song.volume = 0.01
 
 //make character class
+class Character {
+  constructor(name, species, attacks, health, itemsHeld) {
+    this.name = name;
+    this.species = species;
+    this.attacks = attacks;
+    this.health = health;
+    this.itemsHeld = itemsHeld;
+  }
+}
+
 
 //make dragon subclass with nested arrays/objects of descriptors
 
