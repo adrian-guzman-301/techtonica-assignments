@@ -1,10 +1,11 @@
 let song = document.getElementById('song');
 song.volume = 0.01
 
-//make dragon array with nested arrays of descriptors
+//make character class
 
+//make dragon subclass with nested arrays/objects of descriptors
 
-//make knight/player array with nested arrays of descriptors
+//make knight subclass of character class with nested arrays/objects
 
 //swingCounter variable needs to be rendered in the swing div
 //hitsCounter variable needs to be rendered in the hit div
