@@ -1,0 +1,2 @@
+let dragonHealth = 100;
+
