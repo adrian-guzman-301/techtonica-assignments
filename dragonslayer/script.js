@@ -3,17 +3,23 @@ song.volume = 0.01
 
 //make character class
 class Character {
-  constructor(name, species, attacks, health, itemsHeld) {
+  constructor(name, species, attacks, health, itemsHeld, birthYear) {
     this.name = name;
     this.species = species;
     this.attacks = attacks;
     this.health = health;
     this.itemsHeld = itemsHeld;
+    this.birthYear = birthYear;
+  }
+  age() {
+    const date = new Date()
+    return date.getFullYear() - this.birthYear;
   }
 }
 
-
 //make dragon subclass with nested arrays/objects of descriptors
+
+
 
 //make knight subclass of character class with nested arrays/objects
 
