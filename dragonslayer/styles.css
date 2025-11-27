@@ -1,8 +1,8 @@
 body {
-  background-image: url(/Black-Dragon-Kalameet.jpg);
-  background-size: cover;
+  background-image: url(/kalameet.png);
   background-repeat: no-repeat;
-  background-position: center center;
   height: 100vh;
   margin: 0;
+  background-size: 100%;
+  color: white;
 }
