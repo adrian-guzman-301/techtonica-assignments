@@ -1,4 +1,4 @@
+let swingCounter = 0;
+let hitCounter = 0;
+let missCounter = 0;
 let dragonHealth = 100;
-let swingsCounter = 0;
-let hits = 0;
-let misses = 0;
