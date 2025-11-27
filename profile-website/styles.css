@@ -1,0 +1,124 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  font-display: auto;
+}
+
+img {
+  border: 1px dashed black;
+  max-width: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.column {
+  flex: 1;
+  padding: 5px;
+  border: 1px;
+  box-sizing: border-box;
+}
+
+.right-column {
+  margin-top: 60px;
+}
+
+.override-image {
+  border: 2px solid #B40000
+}
+
+.override-body {
+  color: #B40000;
+}
+
+#github-logo, #linkedin-logo {
+  max-width: 100px;
+}
+
+/* 3 web design patterns to implement:
+  1. modal window of pets
+  2. coffee chat request w/calendar pop-up
+  3. dark mode button toggle
+*/
+
+@media(max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media(min-width: 1700px) {
+  .container {
+    display: inline;
+  }
+  h1 {
+    display: block;
+    width: 8%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .override-image {
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .right-column {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    font-size: 20px;
+  }
+}
+/* modal code from w3schools
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*class for dark mode button*/
+.dark-red-mode {
+  background-color: #B40000;
+  color: white;
+}
+
+.coffee-chat {
+  display:
+}

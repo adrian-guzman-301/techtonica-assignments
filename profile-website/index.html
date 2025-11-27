@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SZ4SQH7GK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9SZ4SQH7GK');
+  </script>
+  <!-- charset and viewport meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- open graph metadata -->
+  <meta property="og:title" content="Adrian's Portfolio Page">
+  <meta property="og:description" content="A portfolio showcasing Adrian's Work as a Software Engineer">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:type" content="Portfolio: Adrian Guzman">
+  <!-- 2 additional types of social meta tags -->
+  <meta property="twitter:title" content="Adrian's Portfolio Page">
+  <meta property="twitter:image" content="">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Adrian Guzman</title>
 </head>
-<body>
+<body class="override-body">
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Secret Message</button>
+
+  <!-- Dark Red Mode -->
+  <button id="dark-red-mode-button">Dark Red Mode</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <img src="kiki.jpg" alt="an indoor cat named kiki">
+      <p>Hello! My name is Kiki and I live with Adrian. I'm an indoor cat but am just beginning to get a feel for the outdoors. I can go outside when it's really quiet and really dark since I am very sensitive to harsh external stimuli (unless there's a bird I can stalk!). I like eating really fast so I am forced to eat out of a special eat-slower bowl. I don't like it but I'm used to it now. I <em>love</em> drinking water, almost as much as being carried and petted.</p> 
+      <p>Click anywhere outside this box or on the <em>x</em> to make me go away.</p>
+    </div>
+  </div>
+<!-- non-modal content -->
+  <div class="container">
+    <header class="column left-column">
+      <h1>Adrian Guzman</h1>
+      <img src="adrian-headshot.jpeg" alt="smiling headshot of Adrian Guzman; red background" class="override-image">
+      <p>I am a software engineer in training at Techtonica, a tech apprenticeship for women and non-binary adults.</p>
+      <section>
+        <p>Before entering tech, I worked in politics where I was juggling logistics, data, and people all at once. My experiences taught me to stay adaptable and find creative solutions when things don't go as planned. I noticed how often the software-based tools we relied on would break down, and that really sparked my curiosity. It ultimately led me to Techtonica, where I build reliable, human-centered software.
+        </p>
+    </section>
+    </header>
+    <section class="column right-column">
+      <p>I'd love to get your contact info and connect!</p>
+      <form>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" required><br>
+        <label for="email">Email Address:</label><br>
+        <input type="text" id="email" required><br>
+        <label for="phone-number">Phone Number:</label><br>
+        <input type="text" id="phone-number"><br>
+        <label for="mailing-address">Mailing Address:</label><br>
+        <input type="text" id="mailing-address"><br>
+        <input type="submit" value="Submit">
+      </form>
+        <p id="socials">Let's also connect on LinkedIn and GitHub!:</p>
+        <a id="github-link" href="https://github.com/adrian-guzman-301" aria-label="Adrian's LinkedIn Profile"><img
+        id="github-logo" src="github-logo.png" alt=""></a>
+        <a id="linkedin-link" href="https://www.linkedin.com/in/adrian-wuz-here/" aria-label="Adrian's GitHub Profile"><img id="linkedin-logo" src="linkedin-logo.png" alt=""></a>
+        
+        <div class="coffee-chat">
+          <label for="appointment-time">Let's have a coffee chat:</label>
+          <input type="datetime-local" id="appointment-time" name="appointment-time">
+          <input type="submit" value="Submit">
+        </div>
+    </section>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
