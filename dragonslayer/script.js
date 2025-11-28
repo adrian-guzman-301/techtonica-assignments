@@ -1,5 +1,5 @@
-let song = document.getElementById('song');
-song.volume = 0.1
+// let song = document.getElementById('song');
+// song.volume = 0.1
 
 //make character class
 class Character {
@@ -52,7 +52,6 @@ const knight = new Character(
   ['Greatsword', 'Leather Shield'],
   1930,
 )
-
 let swingCounter = 0;
 let hitCounter = 0;
 let missCounter = 0;
@@ -77,12 +76,21 @@ document.getElementById('dragon-health').innerText = `Dragon Health: ${dragon.he
 //make an array of strings of the different ways you can kill a dragon
   //if knight kills dragon, retrieve a string at random and display it on the webpage
 
-//an event listener needs to be placed on the swing button
+  //an event listener needs to be placed on the swing button
+
 document.getElementById('swing-sword').addEventListener('click', swingSword);
 
+
 function swingSword() {
-  
+  let hitOrMiss = Math.random();
+  swingCounter++
+  if(hitOrMiss < 0.5) {
+    missCounter++
+  } else {
+    hitCounter++
+  }
 }
+
 
 //once the user clicks on the swing button, a function needs to run that calculates a 50% chance if the swing is successful or not
 
