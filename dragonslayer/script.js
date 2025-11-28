@@ -38,6 +38,18 @@ const dragon = new Character(
 
 
 //make knight subclass of character class with nested arrays/objects
+const knight = new Character(
+  'Chosen Undead',
+  'Hollow',
+  {
+    parry: `You stun the dragon, giving you a chance at a killing blow.`,
+    cutOffTail: `You cut of the dragon's tail!`,
+    headStab: `You climb the dragon and stab its head.`,
+  },
+  100,
+  ['Greatsword', 'Leather Shield'],
+  1930,
+)
 
 //swingCounter variable needs to be rendered in the swing div
 //hitsCounter variable needs to be rendered in the hit div
