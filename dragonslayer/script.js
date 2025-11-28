@@ -18,7 +18,9 @@ class Character {
 }
 
 //text to be displayed upon player's death
-const throughDeath = `YOU DIED`;
+const playerDeath = `YOU DIED`;
+//text to be displayed upon dragon's death
+const dragonDeath = `YOU DEFEATED THE BLACK DRAGON`
 
 //make Character instance of dragon with nested arrays/objects of relevant descriptors
 const dragon = new Character(
@@ -32,8 +34,8 @@ const dragon = new Character(
     tailImpalement: `You are impailed by the dragon's tail.`,
   },
   100,
-  ['Calamity Ring', 'Obsidian Greatsword', `60,000 souls`],
-  -999999999999999999999999,
+  ['Calamity Ring', 'Obsidian Greatsword', `60,000,000,000 souls`],
+  -999999,
 )
 
 //make knight subclass of character class with nested arrays/objects
@@ -41,6 +43,7 @@ const knight = new Character(
   'Chosen Undead',
   'Hollow',
   {
+    hit: `You hit the dragon!`,
     parry: `You stun the dragon, giving you a chance at a killing blow.`,
     cutOffTail: `You cut of the dragon's tail!`,
     headStab: `You climb the dragon and stab its head.`,
