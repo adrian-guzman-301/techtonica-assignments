@@ -17,7 +17,10 @@ class Character {
   }
 }
 
-//make dragon subclass with nested arrays/objects of descriptors
+//text to be displayed upon player's death
+const throughDeath = `YOU DIED`;
+
+//make Character instance of dragon with nested arrays/objects of relevant descriptors
 const dragon = new Character(
   'Kalameet',
   'Primordial Archdragon',
@@ -30,7 +33,7 @@ const dragon = new Character(
   },
   100,
   ['Calamity Ring', 'Obsidian Greatsword', `60,000 souls`],
-
+  200,
 )
 
 
