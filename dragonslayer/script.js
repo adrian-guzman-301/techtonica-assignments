@@ -18,7 +18,17 @@ class Character {
 }
 
 //make dragon subclass with nested arrays/objects of descriptors
-
+const dragon = new Character(
+  'Kalameet',
+  'Primordial Archdragon',
+  {
+    markOfCalamity: `You are engulfled in red light and loud screeching, telekinetic powers making you levitate in front of the dragon's red crest.`,
+    swoop: `The dragon flies up into the air and flips over mid-air, swooping down at you.`,
+    blackfireInferno: `The dragon flies high and breathes black fire on the entire area.`,
+    jawSnap: `The dragon darts their head to their sides while lurching forward, curshing you with their powerful jaws and spiked snout.`,
+    tailImpalement: `You are impailed by the dragon's tail.`,
+  }
+)
 
 
 //make knight subclass of character class with nested arrays/objects
