@@ -62,7 +62,7 @@ document.getElementById('hits').innerText = `Hits: ${hitCounter}`;
 //missCounter variable needs to be rendered in the miss div
 document.getElementById('misses').innerText = `Misses: ${missCounter}`;
 //dragonHealth variable needs to be rendered in the dragon health div
-
+document.getElementById('dragon-health').innerText = `Dragon Health: ${dragon.health}`;
 //make an array of swing success strings that will appear if hit successful
   //if hit successful, retrieve a string at random and display it on the webpage
 
