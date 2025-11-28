@@ -1,5 +1,5 @@
 let song = document.getElementById('song');
-song.volume = 0.01
+song.volume = 0.1
 
 //make character class
 class Character {
@@ -78,6 +78,11 @@ document.getElementById('dragon-health').innerText = `Dragon Health: ${dragon.he
   //if knight kills dragon, retrieve a string at random and display it on the webpage
 
 //an event listener needs to be placed on the swing button
+document.getElementById('swing-sword').addEventListener('click', swingSword);
+
+function swingSword() {
+  
+}
 
 //once the user clicks on the swing button, a function needs to run that calculates a 50% chance if the swing is successful or not
 
