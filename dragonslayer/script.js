@@ -90,7 +90,7 @@ function swingSword() {
     hitCounter++
   }
 }
-
+document.getElementById('swings').innerText = `Swings: ${swingCounter}`
 
 //once the user clicks on the swing button, a function needs to run that calculates a 50% chance if the swing is successful or not
 
