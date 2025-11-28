@@ -54,13 +54,13 @@ const knight = new Character(
 let swingCounter = 0;
 let hitCounter = 0;
 let missCounter = 0;
-let dragonHealth = 100;
 
 //swingCounter variable needs to be rendered in the swing div
 document.getElementById('swings').innerText = `Swings: ${swingCounter}`;
 //hitsCounter variable needs to be rendered in the hit div
-document.getElementById('hits').innerText = `Hits: ${hitCounter}`
+document.getElementById('hits').innerText = `Hits: ${hitCounter}`;
 //missCounter variable needs to be rendered in the miss div
+document.getElementById('misses').innerText = `Misses: ${missCounter}`;
 //dragonHealth variable needs to be rendered in the dragon health div
 
 //make an array of swing success strings that will appear if hit successful
