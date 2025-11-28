@@ -51,6 +51,8 @@ const knight = new Character(
   1930,
 )
 
+let swingCounter = 0;
+
 //swingCounter variable needs to be rendered in the swing div
 //hitsCounter variable needs to be rendered in the hit div
 //missCounter variable needs to be rendered in the miss div
