@@ -33,9 +33,8 @@ const dragon = new Character(
   },
   100,
   ['Calamity Ring', 'Obsidian Greatsword', `60,000 souls`],
-  200,
+  -999999999999999999999999,
 )
-
 
 //make knight subclass of character class with nested arrays/objects
 const knight = new Character(
