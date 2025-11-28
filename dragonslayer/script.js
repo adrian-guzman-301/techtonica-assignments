@@ -27,7 +27,10 @@ const dragon = new Character(
     blackfireInferno: `The dragon flies high and breathes black fire on the entire area.`,
     jawSnap: `The dragon darts their head to their sides while lurching forward, curshing you with their powerful jaws and spiked snout.`,
     tailImpalement: `You are impailed by the dragon's tail.`,
-  }
+  },
+  100,
+  ['Calamity Ring', 'Obsidian Greatsword', `60,000 souls`],
+
 )
 
 
