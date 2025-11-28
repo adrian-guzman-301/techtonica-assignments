@@ -59,6 +59,7 @@ let dragonHealth = 100;
 //swingCounter variable needs to be rendered in the swing div
 document.getElementById('swings').innerText = `Swings: ${swingCounter}`;
 //hitsCounter variable needs to be rendered in the hit div
+document.getElementById('hits').innerText = `Hits: ${hitCounter}`
 //missCounter variable needs to be rendered in the miss div
 //dragonHealth variable needs to be rendered in the dragon health div
 
