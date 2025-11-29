@@ -78,19 +78,21 @@ document.getElementById('dragon-health').innerText = `Dragon Health: ${dragon.he
 
   //an event listener needs to be placed on the swing button
 
-document.getElementById('swing-sword').addEventListener('click', swingSword);
+document.getElementById('swing-sword').addEventListener("click", swingSword);
 
 
 function swingSword() {
   let hitOrMiss = Math.random();
   swingCounter++
+  document.getElementById('swings').innerText = `Swings: ${swingCounter}`
   if(hitOrMiss < 0.5) {
     missCounter++
+    document.getElementById('misses').innerText = `Misses: ${missCounter}`
   } else {
     hitCounter++
   }
 }
-document.getElementById('swings').innerText = `Swings: ${swingCounter}`
+
 
 //once the user clicks on the swing button, a function needs to run that calculates a 50% chance if the swing is successful or not
 
