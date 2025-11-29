@@ -13,7 +13,7 @@ class Character {
   }
   age() {
     const date = new Date()
-    return date.getFullYear() - this.birthYear;
+    return `${this.name} is ${date.getFullYear() - this.birthYear} years old!`;
   }
 }
 
@@ -35,7 +35,7 @@ const dragon = new Character(
   },
   100,
   ['Calamity Ring', 'Obsidian Greatsword', `60,000,000,000 souls`],
-  -999999,
+  -99999999999999999,
 )
 
 //make knight subclass of character class with nested arrays/objects
@@ -50,7 +50,7 @@ const knight = new Character(
   },
   100,
   ['Greatsword', 'Leather Shield'],
-  1930,
+  1500,
 )
 let swingCounter = 0;
 let hitCounter = 0;
@@ -90,6 +90,7 @@ function swingSword() {
     document.getElementById('misses').innerText = `Misses: ${missCounter}`
   } else {
     hitCounter++
+    document.getElementById('hits').innerText = `Hits: ${hitCounter}`
   }
 }
 
