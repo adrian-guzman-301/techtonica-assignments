@@ -42,12 +42,13 @@ const dragon = new Character(
 const knight = new Character(
   'Chosen Undead',
   'Hollow',
-  {
-    hit: `You hit the dragon!`,
-    parry: `You stun the dragon, giving you a chance at a killing blow.`,
-    cutOffTail: `You cut of the dragon's tail!`,
-    dieByTheSword: `You climb the dragon and stab the top of its head.`,
-  },
+  [
+    {hitOne: `You hit the dragon!`},
+    {hitTwo: `You hit the dragon, again!`},
+    {hitThree: `You stun the dragon, giving you a chance at a killing blow!`},
+    {hitFour: `You cut of the dragon's tail! The dragon's staggering!`},
+    {hitFive: `You climb the dragon and stab the top of its head!`},
+  ],
   100,
   ['Greatsword', 'Leather Shield'],
   1500,
@@ -94,9 +95,9 @@ function swingSword() {
     }
   } else {
     hitCounter++
-    document.getElementById()
     document.getElementById('dragon-health').innerText = `Dragon Health: ${dragon.health = dragon.health - 20}`
     document.getElementById('hits').innerText = `Hits: ${hitCounter}`
+    document.getElementById('hit-message').innerText = `${knight.attacks.fir}`
     if(swingCounter <= 10 && hitCounter === 5) {
       document.getElementById('victory-message').innerText = dragonDeath
     }
