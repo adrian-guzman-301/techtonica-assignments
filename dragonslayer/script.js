@@ -46,7 +46,7 @@ const knight = new Character(
     hit: `You hit the dragon!`,
     parry: `You stun the dragon, giving you a chance at a killing blow.`,
     cutOffTail: `You cut of the dragon's tail!`,
-    headStab: `You climb the dragon and stab its head.`,
+    dieByTheSword: `You climb the dragon and stab the top of its head.`,
   },
   100,
   ['Greatsword', 'Leather Shield'],
