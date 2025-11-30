@@ -17,10 +17,11 @@ class Character {
   }
 }
 
-//text to be displayed upon player's death
-const playerDeath = `YOU DIED!`;
+let playerOrDragonDeathMessage = ['YOU DIED!', 'YOU SLAYED THE DRAGON!'];
 //text to be displayed upon dragon's death
-const dragonDeath = `YOU SLAYED THE DRAGON!`
+let playerWinMessage = playerOrDragonDeathMessage.pop()
+//text to be displayed upon player victory
+let dragonWinMessage = playerOrDragonDeathMessage.shift()
 
 //make Character instance of dragon with nested arrays/objects of relevant descriptors
 const dragon = new Character(
@@ -58,13 +59,13 @@ let hitCounter = 0;
 let missCounter = 0;
 
 //swingCounter variable needs to be rendered in the swing div
-document.getElementById('swings').innerText = `Swings: ${swingCounter}`;
+
 //hitsCounter variable needs to be rendered in the hit div
-document.getElementById('hits').innerText = `Hits: ${hitCounter}`;
+
 //missCounter variable needs to be rendered in the miss div
-document.getElementById('misses').innerText = `Misses: ${missCounter}`;
+
 //dragonHealth variable needs to be rendered in the dragon health div
-document.getElementById('dragon-health').innerText = `Dragon Health: ${dragon.health}`;
+
 //make an array of swing success strings that will appear if hit successful
   //if hit successful, retrieve a string at random and display it on the webpage
 
@@ -90,16 +91,15 @@ function swingSword() {
     missCounter++
     document.getElementById('misses').innerText = `Misses: ${missCounter}`
     if(swingCounter === 10 && hitCounter < 5) {
-      console.log("Should show defeat! hitCounter:", hitCounter, "swingCounter:", swingCounter);
-      document.getElementById('defeat-message').innerText = playerDeath
+      document.getElementById('defeat-message').innerText = dragonWinMessage
     }
   } else {
     hitCounter++
     document.getElementById('dragon-health').innerText = `Dragon Health: ${dragon.health = dragon.health - 20}`
     document.getElementById('hits').innerText = `Hits: ${hitCounter}`
-    document.getElementById('hit-message').innerText = `${knight.attacks.fir}`
     if(swingCounter <= 10 && hitCounter === 5) {
-      document.getElementById('victory-message').innerText = dragonDeath
+      document.getElementById('hit-message').innerText = knight['attacks'][4]
+      document.getElementById('victory-message').innerText = playerWinMessage
     }
   }
 }
