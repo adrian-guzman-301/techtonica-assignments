@@ -89,14 +89,16 @@ function swingSword() {
     missCounter++
     document.getElementById('misses').innerText = `Misses: ${missCounter}`
     if(swingCounter === 10 && hitCounter < 5) {
-      document.getElementById('defeat').innerText = playerDeath
+      console.log("Should show defeat! hitCounter:", hitCounter, "swingCounter:", swingCounter);
+      document.getElementById('defeat-message').innerText = playerDeath
     }
   } else {
     hitCounter++
+    document.getElementById()
     document.getElementById('dragon-health').innerText = `Dragon Health: ${dragon.health = dragon.health - 20}`
     document.getElementById('hits').innerText = `Hits: ${hitCounter}`
-    if(hitCounter === 5 && swingCounter <= 10) {
-      document.getElementById('victory').innerText = dragonDeath
+    if(swingCounter <= 10 && hitCounter === 5) {
+      document.getElementById('victory-message').innerText = dragonDeath
     }
   }
 }
