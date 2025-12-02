@@ -31,13 +31,18 @@ const dragon = new Character(
     markOfCalamity: `You are engulfled in red light and loud screeching, telekinetic powers making you levitate in front of the dragon's red crest.`,
     swoop: `The dragon flies up into the air and flips over mid-air, swooping down at you.`,
     blackfireInferno: `The dragon flies high above and breathes black fire on the entire area.`,
-    jawSnap: `The dragon darts their head to their sides while lurching forward, curshing you with their powerful jaws and spiked snout.`,
+    jawSnap: `The dragon darts their head to their sides while lurching forward, curshing you with powerful jaws and spiked snout.`,
     tailImpalement: `You are impailed by the dragon's tail.`,
   },
   100,
   ['Calamity Ring', 'Obsidian Greatsword', `60,000,000,000 souls`],
   -99999999999999999,
 )
+
+//dragonKillsPlayerText
+// let dragonKillsPlayer = dragon.attacks.random()
+const randomDragonAttacksIndices = Math.floor(Math.random() * dragon.attacks.length)
+const randomDragonAttacks = dragon.attacks[randomDragonAttacksIndices]
 
 //make knight subclass of character class with nested arrays/objects
 const knight = new Character(
@@ -57,6 +62,8 @@ const knight = new Character(
 let swingCounter = 0;
 let hitCounter = 0;
 let missCounter = 0;
+
+let playerKillsDragon = knight.attacks[4].hitFive
 
 //swingCounter variable needs to be rendered in the swing div
 
@@ -98,7 +105,7 @@ function swingSword() {
     document.getElementById('dragon-health').innerText = `Dragon Health: ${dragon.health = dragon.health - 20}`
     document.getElementById('hits').innerText = `Hits: ${hitCounter}`
     if(swingCounter <= 10 && hitCounter === 5) {
-      document.getElementById('hit-message').innerText = knight['attacks'][4]
+      document.getElementById('hit-message').innerText = knight.attacks[4].hitFive.toUpperCase()
       document.getElementById('victory-message').innerText = playerWinMessage
     }
   }
