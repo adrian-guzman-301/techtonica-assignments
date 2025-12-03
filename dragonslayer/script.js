@@ -17,11 +17,11 @@ class Character {
   }
 }
 
-let endgameMessage = ['YOU DIED!', 'YOU SLAYED THE DRAGON!'];
+let endgameMessages = ['YOU DIED!', 'YOU SLAYED THE DRAGON!'];
 //text to be displayed upon dragon's death
-let playerWinMessage = endgameMessage.pop()
-//text to be displayed upon player victory
-let dragonWinMessage = endgameMessage.shift()
+let playerWinMessage = endgameMessages.pop()
+//text to be displayed upon player's death
+let dragonWinMessage = endgameMessages.shift()
 
 //make Character instance of dragon with nested arrays/objects of relevant descriptors
 const dragon = new Character(
@@ -29,13 +29,13 @@ const dragon = new Character(
   'Primordial Archdragon',
   {
     markOfCalamity: `You are engulfled in red light and loud screeching, telekinetic powers levitating you in front of the dragon's red crest.`,
-    swoop: `The dragon flies up into the air and flips over mid-air, swooping down at you.`,
-    blackfireInferno: `The dragon flies high above and breathes black fire on the entire area.`,
-    jawSnap: `The dragon darts their head to their sides while lurching forward, curshing you with powerful jaws and spiked snout.`,
+    swoop: `The dragon ascends high above and flips over mid-air, swooping down at you.`,
+    blackfireInferno: `The dragon takes flight and breathes black fire on the entire area.`,
+    jawSnap: `The dragon darts their head to their sides while lurching forward, crushing you with powerful jaws and spiked snout.`,
     tailImpalement: `You are impailed by the dragon's tail.`,
   },
   100,
-  ['Calamity Ring', 'Obsidian Greatsword', `60,000,000,000 souls`],
+  ['Calamity Ring', 'Obsidian Greatsword', `150,000 souls`],
   -99999999999999999,
 )
 
@@ -49,11 +49,11 @@ const knight = new Character(
   'Chosen Undead',
   'Hollow',
   [
-    {hitOne: `You hit the dragon!`},
-    {hitTwo: `You hit the dragon, again!`},
-    {hitThree: `You stun the dragon, giving you a chance at a killing blow!`},
-    {hitFour: `You cut of the dragon's tail! The dragon's staggering!`},
-    {hitFive: `You climb the dragon and decapitate it!`},
+    {cut: `You hit the dragon!`},
+    {slash: `You hit the dragon, again!`},
+    {criticalHit: `You stun the dragon, giving you a chance at a killing blow!`},
+    {tailSever: `You cut off the dragon's tail! The dragon's staggering!`},
+    {dragonDecapitation: `You climb the dragon and decapitate it!`},
   ],
   100,
   ['Greatsword', 'Leather Shield'],
