@@ -59,9 +59,6 @@ const knight = new Character(
   ['Greatsword', 'Leather Shield'],
   1500,
 )
-let swingCounter = 0;
-let hitCounter = 0;
-let missCounter = 0;
 
 let playerKillsDragon = knight.attacks[4].hitFive
 
@@ -85,6 +82,9 @@ let playerKillsDragon = knight.attacks[4].hitFive
 //make an array of strings of the different ways you can kill a dragon
   //if knight kills dragon, retrieve a string at random and display it on the webpage
 
+let swingCounter = 0;
+let hitCounter = 0;
+let missCounter = 0;
   //an event listener needs to be placed on the swing button
 
 document.getElementById('swing-sword').addEventListener("click", swingSword);
@@ -97,7 +97,7 @@ function swingSword() {
   if(hitOrMiss < 0.5) {
     missCounter++
     document.getElementById('misses').innerText = `Misses: ${missCounter}`
-    if(swingCounter === 10 && hitCounter < 5) {
+  if(swingCounter === 10 && hitCounter < 5) {
       document.getElementById('defeat-message').innerText = dragonWinMessage
     }
   } else {
@@ -109,6 +109,7 @@ function swingSword() {
       document.getElementById('victory-message').innerText = playerWinMessage
     }
   }
+  //print message
 }
 
 
