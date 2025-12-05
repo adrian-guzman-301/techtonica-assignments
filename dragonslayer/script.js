@@ -65,7 +65,7 @@ let missCounter = 0;
 
 document.getElementById('swing-sword').addEventListener("click", swingSword);
 
-
+//this if/else logic is buggy on certain win/loss, text-should-appear-now conditions
 function swingSword() {
   let hitOrMiss = Math.random();
   swingCounter++
