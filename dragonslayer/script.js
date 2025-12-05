@@ -122,5 +122,5 @@ function swingSword() {
 //if swings reach 10 and dragon health is not at 0, dragon kills player
   //target player's death array and randomly retrieve a string to display in respective div
 
-//if hits reach 4 and swings are 10 or less, player kills dragon
+//if hits reach 5 and swings are 10 or less, player kills dragon
   //target dragon's death array and randomly retrieve a string to display in respective div
