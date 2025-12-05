@@ -17,18 +17,18 @@ class Character {
   }
 }
 
-let endgameMessage = ['YOU DIED!', 'YOU SLAYED THE DRAGON!'];
+let playerOrDragonDeathMessage = ['YOU DIED!', 'YOU SLAYED THE DRAGON!'];
 //text to be displayed upon dragon's death
-let playerWinMessage = endgameMessage.pop()
+let playerWinMessage = playerOrDragonDeathMessage.pop()
 //text to be displayed upon player victory
-let dragonWinMessage = endgameMessage.shift()
+let dragonWinMessage = playerOrDragonDeathMessage.shift()
 
 //make Character instance of dragon with nested arrays/objects of relevant descriptors
 const dragon = new Character(
   'Kalameet',
   'Primordial Archdragon',
   {
-    markOfCalamity: `You are engulfled in red light and loud screeching, telekinetic powers levitating you in front of the dragon's red crest.`,
+    markOfCalamity: `You are engulfled in red light and loud screeching, telekinetic powers making you levitate in front of the dragon's red crest.`,
     swoop: `The dragon flies up into the air and flips over mid-air, swooping down at you.`,
     blackfireInferno: `The dragon flies high above and breathes black fire on the entire area.`,
     jawSnap: `The dragon darts their head to their sides while lurching forward, curshing you with powerful jaws and spiked snout.`,
@@ -53,7 +53,7 @@ const knight = new Character(
     {hitTwo: `You hit the dragon, again!`},
     {hitThree: `You stun the dragon, giving you a chance at a killing blow!`},
     {hitFour: `You cut of the dragon's tail! The dragon's staggering!`},
-    {hitFive: `You climb the dragon and decapitate it!`},
+    {hitFive: `You climb the dragon and stab the top of its head!`},
   ],
   100,
   ['Greatsword', 'Leather Shield'],
