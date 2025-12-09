@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>dragonslayer</title>
+</head>
+<body>
+  <h1>dragonslayer</h1>
+  <p>You are a powerful knight in the heat of battle against a dragon!<br>You've been fighting for days but can still manage to swing your weapon.</p>
+  <p>Your battle fatigue and the dragon's relentless agility means your<br>swings only hit 50% of the time.</p>
+  <p>If you hit the dragon 5 times by 10th swing, you slay the dragon!</p>
+  <p>If you <em>don't</em> hit the dragon 5 times by 10th swing, the dragon slays <em>you</em>!</p>
+  <p>Each successful hit reduces the dragon's remaining health by 20%.</p>
+  <div id="interface">
+    <div id="swings">Swings:</div>
+    <div id="hits">Hits:</div>
+    <div id="misses">Misses:</div>
+    <div id="dragon-health">Dragon Health:</div>
+    <button id="swing-sword">Swing Sword</button>
+  </div>
+  <div id="messages">
+    <div id="miss-message"></div>
+    <div id="hit-message"></div>
+    <div id="dragon-attack-message"></div>
+    <div id="defeat-message"></div>
+    <div id="victory-message"></div>
+  </div>
+  <!-- <audio autoplay id="song">
+    <source src="28. Kalameet.mp3" type="audio/mpeg">
+  </audio> -->
+  <script src="script.js"></script>
+</body>
+</html>
