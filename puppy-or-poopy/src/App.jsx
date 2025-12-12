@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   const [coinsFlipped, flipCounter] = useState(0);
   const [dogsAdopted, adoptedCounter] = useState(0);
-  
+  const [poopCollected, poopCounter] = useState(0);
   return (
     <>
       <h1>puppy or poopy?</h1>
