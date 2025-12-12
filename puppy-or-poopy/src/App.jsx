@@ -5,7 +5,10 @@ import './App.css'
 
 function App() {
   return (
-    <h1>puppy or poopy?</h1>
+    <>
+      <h1>puppy or poopy?</h1>
+      <button>flip coin</button>
+    </>
   )
 }
 
