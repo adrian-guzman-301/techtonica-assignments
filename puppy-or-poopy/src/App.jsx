@@ -4,9 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [coinsFlipped, flipCounter] = useState(0);
-  const [dogsAdopted, adoptedCounter] = useState(0);
-  const [poopCollected, poopCounter] = useState(0);
+  const [coinsFlipped, setCoinsFlipped] = useState(0);
+  const [dogsAdopted, setDogsAdopted] = useState(0);
+  const [poopCollected, setPoopCollected] = useState(0);
   return (
     <>
       <h1>puppy or poopy?</h1>
