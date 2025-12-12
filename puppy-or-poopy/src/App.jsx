@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
+  const [coinsFlipped, flipCounter] = useState(0)
   return (
     <>
       <h1>puppy or poopy?</h1>
