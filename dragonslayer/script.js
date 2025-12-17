@@ -82,7 +82,7 @@ let playerKillsDragon = knight.attacks[4].hitFive
 //make an array of strings of the different ways you can kill a dragon
   //if knight kills dragon, retrieve a string at random and display it on the webpage
 
-let swingCounter = 0;
+let swingCounter = 0
 let hitCounter = 0;
 let missCounter = 0;
   //an event listener needs to be placed on the swing button
