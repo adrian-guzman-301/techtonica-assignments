@@ -10,6 +10,9 @@ function App() {
   const coinFlip = () => {
     const result = Math.random() < 0.5 ? 'heads' : 'tails'
   }
+  //state update for coin flip
+  setFlipCount(flipCount + 1)
+  setFlipResult(result)
   return (
     <>
       <h1>puppy or poopy?</h1>
