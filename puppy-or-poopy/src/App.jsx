@@ -16,8 +16,9 @@ function App() {
   return (
     <>
       <h1>puppy or poopy?</h1>
+      {/* pass flip function for button */}
       <CoinFlipControls onFlip={coinFlip} flipCount={flipCount}/>
-      <DogImageRender />
+      <DogImageRender image={currentImage} result={flipResult}/>
     </>
   )
 }
