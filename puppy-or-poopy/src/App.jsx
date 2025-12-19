@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -11,8 +9,7 @@ function App() {
   return (
     <>
       <h1>puppy or poopy?</h1>
-      {currentImage ? <img src = {currentImage} /> : <span>click the button to see some dogs! or some poop</span>}
-      <button>flip coin</button>
+      <CoinFlipControls />
     </>
   )
 }
