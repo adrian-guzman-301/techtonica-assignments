@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState} from 'react' //hook for managing data changes
 import './App.css'
 
 function App() {
