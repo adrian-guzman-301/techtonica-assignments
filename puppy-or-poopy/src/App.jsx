@@ -3,6 +3,7 @@ import './App.css'
 
 function App() {
   const [flipCount, setFlipCount] = useState(0)
+  const [currentImage, setCurrentImage] = useState('')
   return (
     <>
       <h1>puppy or poopy?</h1>
