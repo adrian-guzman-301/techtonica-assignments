@@ -10,6 +10,7 @@ function App() {
     <>
       <h1>puppy or poopy?</h1>
       <CoinFlipControls />
+      <DogImage />
     </>
   )
 }
