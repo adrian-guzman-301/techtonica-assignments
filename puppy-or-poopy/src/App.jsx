@@ -2,6 +2,7 @@ import {useState} from 'react'
 import './App.css'
 
 function App() {
+  const [flipCount, setFlipCount] = useState(0)
   return (
     <>
       <h1>puppy or poopy?</h1>
