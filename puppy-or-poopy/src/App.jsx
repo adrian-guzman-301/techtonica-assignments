@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <h1>puppy or poopy?</h1>
-      <CoinFlipControls />
+      <CoinFlipControls onFlip={coinFlip} flipCount={flipCount}/>
       <DogImageRender />
     </>
   )
