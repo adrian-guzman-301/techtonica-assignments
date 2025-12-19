@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <>
       <h1>puppy or poopy?</h1>
       <CoinFlipControls />
-      <DogImage />
+      <DogImageRender />
     </>
   )
 }
