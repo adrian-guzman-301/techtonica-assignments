@@ -1,3 +1,7 @@
 export default function CoinFlipControls() {
-  return <button>flip coin</button>
+  return (
+    <>
+      <button onClick={onFlip}>flip coin</button>
+    </>
+  )
 }
