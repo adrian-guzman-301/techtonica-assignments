@@ -2,6 +2,7 @@
 import {useState} from 'react'
 import './App.css'
 import CoinFlipControls from './CoinFlipControls'
+import DogImageRender from './DogImageRender'
 
 
 function App() {
