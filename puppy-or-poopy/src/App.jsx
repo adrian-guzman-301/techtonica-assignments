@@ -1,6 +1,8 @@
 //hook that manages data
 import {useState} from 'react'
 import './App.css'
+import CoinFlipControls from './CoinFlipControls'
+
 
 function App() {
   const [flipCount, setFlipCount] = useState(0)
