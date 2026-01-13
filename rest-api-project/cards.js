@@ -1,3 +1,4 @@
+//collectable trading cards objects in array
 const CARDS = [
   {
     "id": "0001",
