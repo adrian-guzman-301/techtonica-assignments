@@ -9,7 +9,7 @@ app.get('/cards', (req, res) => {
   res.json(CARDS);
 });
 
-/* i need 3 more routes: POST, PUT/PATCH, and DELETE */
+/* i need 3 more routes: POST, PUT, and DELETE */
 
 //display message if port connection successful
 app.listen(PORT, () => {
