@@ -4,8 +4,7 @@ import CARDS from './cards.js';
 const app = express();
 const PORT = 3000;
 
-//console.log(CARDS)
-
+//retrieve card data and format it into json
 app.get('/cards', (req, res) => {
   res.json(CARDS);
 });
