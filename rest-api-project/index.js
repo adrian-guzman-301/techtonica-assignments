@@ -9,6 +9,7 @@ app.get('/cards', (req, res) => {
   res.json(CARDS);
 });
 
+//display message if port connection successful
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`)
 })
