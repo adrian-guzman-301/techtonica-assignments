@@ -2,6 +2,7 @@ import express from 'express';
 import CARDS from './cards.js';
 
 const app = express();
+app.use(express.json())
 const PORT = 3000;
 
 //retrieve card data and format it into json
@@ -11,6 +12,7 @@ app.get('/cards', (req, res) => {
 
 /* i need 3 more routes: POST, PUT, and DELETE */
 app.post('/cards', (req, res) => {
+  console.log(req.body)
   res.send(CARDS)
 })
 
