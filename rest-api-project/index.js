@@ -9,6 +9,8 @@ app.get('/cards', (req, res) => {
   res.json(CARDS);
 });
 
+/* i need 3 more routes: POST, PUT/PATCH, and DELETE */
+
 //display message if port connection successful
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`)
