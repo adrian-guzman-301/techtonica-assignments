@@ -13,7 +13,7 @@ app.get('/cards', (req, res) => {
 /* i need 3 more routes: POST, PUT, and DELETE */
 app.post('/cards', (req, res) => {
   console.log(req.body)
-  res.send(CARDS)
+  res.json(CARDS)
 })
 
 
