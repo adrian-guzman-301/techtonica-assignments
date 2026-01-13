@@ -10,6 +10,10 @@ app.get('/cards', (req, res) => {
 });
 
 /* i need 3 more routes: POST, PUT, and DELETE */
+app.post('/cards', (req, res) => {
+  res.send(CARDS)
+})
+
 
 //display message if port connection successful
 app.listen(PORT, () => {
