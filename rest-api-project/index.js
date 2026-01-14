@@ -10,11 +10,14 @@ app.get('/cards', (req, res) => {
   res.json(CARDS);
 });
 
-/* i need 3 more routes: POST, PUT, and DELETE */
+//adds a card
 app.post('/cards', (req, res) => {
-  req.body.push(req)
+  CARDS.push(req.body)
   res.json(CARDS)
 })
+
+//i need 2 more routes: PUT, and DELETE
+
 
 
 //display message if port connection successful
