@@ -17,7 +17,9 @@ app.post('/cards', (req, res) => {
 })
 
 //i need 2 more routes: PUT, and DELETE
-
+app.delete('/cards/:id', (req, res) => {
+  
+})
 
 
 //display message if port connection successful
