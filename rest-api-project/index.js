@@ -18,8 +18,8 @@ app.post('/cards', (req, res) => {
 
 //i need 2 more routes: PUT, and DELETE
 app.delete('/cards/:id', (req, res) => {
-  CARDS.filter((card) => {
-    
+  CARDS = CARDS.filter((card) => {
+    return card.id !== req.params.id
   })
 })
 
