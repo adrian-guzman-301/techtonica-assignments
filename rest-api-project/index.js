@@ -19,6 +19,9 @@ app.post('/cards', (req, res) => {
 //PUT: replace entire card collection with new cards
 app.put('/cards', (req, res) => {
   //find card
+  findCard = CARDS.find((card) => {
+    return card.id !== req.params.id
+  })
   //update found card's properties
   //send response
 })
