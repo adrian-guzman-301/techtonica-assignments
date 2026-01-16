@@ -25,7 +25,10 @@ app.post('/cards', (req, res) => {
 
 //adds a card to database
 app.post('/db/cards', async (req, res) => {
-  
+  const result = await pool.query(
+    'INSERT INTO cards (id, name, type, mana_cost, rarity, set) VALUES ($1, $2, $3, $4, $5, $6)',
+    
+  )
 })
 
 //PUT: replace entire card collection with new cards
