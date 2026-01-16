@@ -80,7 +80,7 @@ app.delete('/db/cards/:id', async (req, res) => {
     'DELETE FROM cards WHERE id=$1',
     [req.params.id]
   )
-  
+  res.send('card successfully deleted')
 })
 
 
