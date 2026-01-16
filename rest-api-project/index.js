@@ -1,5 +1,6 @@
 import express from 'express';
 import CARDS from './cards.js';
+import pool from './db.js';
 
 const app = express();
 app.use(express.json())
@@ -61,7 +62,7 @@ app.listen(PORT, () => {
 //test both hardcoded JSON and local database operations via postman
 
 //complete by friday 2 pm:
-//complete the transition of all CRUD opeations to use the local database only
+//complete the transition of all CRUD operations to use the local database only
 //refine and optimize database queries
 //ensure all API endpoints now interact with the local database
 //thoroughly test via postman
