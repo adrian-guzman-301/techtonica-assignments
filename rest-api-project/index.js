@@ -53,7 +53,7 @@ app.put('/cards/:id', (req, res) => {
 app.put('/db/cards/:id', async (req, res) => {
   const result = await pool.query(
     'UPDATE cards INTO SET (id=$1, name=$2, type=$3, mana_cost=$4, rarity=$5, set=$6) WHERE id=$7',
-    
+    [req.body.id, req.body.name, req.body.type, req.body.manaCost, req.body.rarity, req.body.set]
   )
 })
 
