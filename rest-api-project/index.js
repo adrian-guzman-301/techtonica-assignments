@@ -40,17 +40,15 @@ app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`)
 })
 
-//things to do--complete wednesday
-//update and delete operations using hardcoded card data
+//complete by end of day today:
+//put and delete operations using hardcoded card data
 //test update and delete operations using hardcoded card data
-
-//complete by thursday:
 //set up a local database e.g. PostgreSQL
 //transfer hardcoded JSON data into the local database table
 //do the 4 CRUD operations for the local database
 //test both hardcoded JSON and local database operations via postman
 
-//complete by friday:
+//complete by friday 2 pm:
 //complete the transition of all CRUD opeations to use the local database only
 //refine and optimize database queries
 //ensure all API endpoints now interact with the local database
