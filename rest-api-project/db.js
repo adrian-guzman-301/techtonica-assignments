@@ -6,3 +6,5 @@ const pool = new Pool({
   database: 'cards_db',
   port: 5432,
 })
+
+export default pool;
