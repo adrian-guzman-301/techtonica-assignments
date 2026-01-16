@@ -27,6 +27,7 @@ app.put('/cards', (req, res) => {
   findCard.name = req.body.name
   findCard.type = req.body.type
   findCard.type = req.body.manaCost
+  findCard.rarity = req.body.rarity
   //send response
 })
 
