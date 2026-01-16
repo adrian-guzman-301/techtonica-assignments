@@ -16,7 +16,10 @@ app.post('/cards', (req, res) => {
   res.json(CARDS)
 })
 
-//i need 2 more routes: PUT, and DELETE
+//PUT: replace entire card collection with new cards
+
+
+// DELETE a card
 app.delete('/cards/:id', (req, res) => {
   // CARDS.filter((card) => {
   //   return card.id !== req.params.id
@@ -31,6 +34,7 @@ app.delete('/cards/:id', (req, res) => {
 })
 
 
+
 //display message if port connection successful
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`)
@@ -38,7 +42,7 @@ app.listen(PORT, () => {
 
 //things to do--complete wednesday
 //update and delete operations using hardcoded card data
-//test line 34 on postman
+//test update and delete operations using hardcoded card data
 
 //complete by thursday:
 //set up a local database e.g. PostgreSQL
