@@ -17,7 +17,9 @@ app.post('/cards', (req, res) => {
 })
 
 //PUT: replace entire card collection with new cards
-
+app.put('/cards', (req, res) => {
+  
+})
 
 // DELETE a card
 app.delete('/cards/:id', (req, res) => {
