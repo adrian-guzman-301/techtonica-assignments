@@ -20,6 +20,7 @@ app.post('/cards', (req, res) => {
 app.put('/cards', (req, res) => {
   //find card
   //update found card's properties
+  //send response
 })
 
 // DELETE a card
