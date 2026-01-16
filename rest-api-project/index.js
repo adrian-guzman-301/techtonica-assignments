@@ -76,6 +76,10 @@ app.delete('/cards/:id', (req, res) => {
 
 //delete a card in database
 app.delete('/db/cards/:id', async (req, res) => {
+  const result = await pool.query(
+    'DELETE FROM cards WHERE id=$1',
+    [req.params.id]
+  )
   
 })
 
