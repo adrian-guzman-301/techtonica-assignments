@@ -27,7 +27,7 @@ app.post('/cards', (req, res) => {
 app.post('/db/cards', async (req, res) => {
   const result = await pool.query(
     'INSERT INTO cards (id, name, type, mana_cost, rarity, set) VALUES ($1, $2, $3, $4, $5, $6)',
-    [req.body.id, req.body.name, req.body.type, req.body.mana_cost, req.body.rarity, req.body.set]
+    [req.body.id, req.body.name, req.body.type, req.body.manaCost, req.body.rarity, req.body.set]
   )
 })
 
