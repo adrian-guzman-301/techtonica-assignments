@@ -75,7 +75,9 @@ app.delete('/cards/:id', (req, res) => {
 })
 
 //delete a card in database
-
+app.delete('/db/cards/:id', async (req, res) => {
+  
+})
 
 
 //display message if port connection successful
