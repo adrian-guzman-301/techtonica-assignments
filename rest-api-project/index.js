@@ -55,8 +55,6 @@ app.listen(PORT, () => {
 })
 
 //complete by end of day today:
-//put and delete operations using hardcoded card data
-//test update and delete operations using hardcoded card data
 //set up a local database e.g. PostgreSQL
 //transfer hardcoded JSON data into the local database table
 //do the 4 CRUD operations for the local database
