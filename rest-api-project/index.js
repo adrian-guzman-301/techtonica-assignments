@@ -30,6 +30,7 @@ app.put('/cards', (req, res) => {
   findCard.rarity = req.body.rarity
   findCard.set = req.body.set
   //send response
+  res.send('card updated')
 })
 
 // DELETE a card
