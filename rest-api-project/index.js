@@ -17,7 +17,7 @@ app.post('/cards', (req, res) => {
 })
 
 //PUT: replace entire card collection with new cards
-app.put('/cards', (req, res) => {
+app.put('/cards/:id', (req, res) => {
   //find card
   const findCard = CARDS.find((card) => {
     return card.id === req.params.id
