@@ -11,6 +11,11 @@ app.get('/cards', (req, res) => {
   res.json(CARDS);
 });
 
+//get route for database
+app.get('db/cards', async (req, res) => {
+  
+})
+
 //adds a card
 app.post('/cards', (req, res) => {
   CARDS.push(req.body)
