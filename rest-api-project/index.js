@@ -50,7 +50,9 @@ app.put('/cards/:id', (req, res) => {
 })
 
 //update existing database card
-
+app.put('/db/cards/:id', async (req, res) => {
+  
+})
 
 
 // DELETE a card
