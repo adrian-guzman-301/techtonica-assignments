@@ -11,9 +11,10 @@ app.get('/cards', (req, res) => {
   res.json(CARDS);
 });
 
-//get route for database
-app.get('db/cards', async (req, res) => {
-  
+//get all cards from database
+app.get('/db/cards', async (req, res) => {
+  const result = await pool.query('SELECT * FROM cards');
+  res.json(result.rows)
 })
 
 //adds a card
