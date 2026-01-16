@@ -24,6 +24,7 @@ app.put('/cards', (req, res) => {
   })
   //update found card's properties
   findCard.id = req.body.id
+  findCard.name = req.body.name
   //send response
 })
 
