@@ -23,6 +23,11 @@ app.post('/cards', (req, res) => {
   res.json(CARDS)
 })
 
+//adds a card to database
+app.post('/db/cards', async (req, res) => {
+  
+})
+
 //PUT: replace entire card collection with new cards
 app.put('/cards/:id', (req, res) => {
   //find card
