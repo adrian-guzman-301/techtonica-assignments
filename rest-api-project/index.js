@@ -60,7 +60,7 @@ app.put('/db/cards/:id', async (req, res) => {
 })
 
 
-// DELETE a card
+// DELETE a hardcoded card
 app.delete('/cards/:id', (req, res) => {
   // CARDS.filter((card) => {
   //   return card.id !== req.params.id
@@ -88,15 +88,3 @@ app.delete('/db/cards/:id', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`)
 })
-
-//complete by end of day today:
-//set up a local database e.g. PostgreSQL
-//transfer hardcoded JSON data into the local database table
-//do the 4 CRUD operations for the local database
-//test both hardcoded JSON and local database operations via postman
-
-//complete by friday 2 pm:
-//complete the transition of all CRUD operations to use the local database only
-//refine and optimize database queries
-//ensure all API endpoints now interact with the local database
-//thoroughly test via postman
