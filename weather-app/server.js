@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const PORT = 8080;
-requre('dotenv').config();
+require('dotenv').config();
 
 //define a route for GET requests to the root URL
 app.get('/', (req, res) => {
@@ -12,3 +12,5 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
   console.log(`example app listening at port ${PORT}`);
 })
+
+//hello
