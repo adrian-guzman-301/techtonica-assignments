@@ -13,4 +13,12 @@ app.listen(PORT, () => {
   console.log(`example app listening at port ${PORT}`);
 })
 
-//hello
+//fetch request
+async function getData() {
+  const url = "";
+  try {
+
+  }
+
+  
+}
