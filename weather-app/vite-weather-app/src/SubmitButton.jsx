@@ -1,6 +1,6 @@
-function SubmitButton({ onClick }) {
+function SubmitButton({ handleClick }) {
   return (
-    <button onClick={onClick}>Submit</button>
+    <button onClick={handleClick}>Submit</button>
   )
 }
 
