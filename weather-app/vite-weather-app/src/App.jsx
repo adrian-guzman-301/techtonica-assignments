@@ -4,6 +4,7 @@ import SubmitButton from './SubmitButton.jsx'
 import WeatherDisplay from './WeatherDisplay.jsx'
 
 function App() {
+  //store weather data via state
   const [weatherData, setWeatherData] = useState(null)
 
   //test data
