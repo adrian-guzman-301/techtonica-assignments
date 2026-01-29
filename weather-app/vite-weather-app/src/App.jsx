@@ -8,6 +8,8 @@ function App() {
   const [weatherData, setWeatherData] = useState(null)
   //store city from user input
   const [city, setCity] = useState('')
+  //handle errors
+  const [error, setError] = useState(null)
 
   //fetch weather from server
   function getWeather() {
