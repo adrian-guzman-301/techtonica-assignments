@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import SubmitButton from './SubmitButton.jsx'
 import WeatherDisplay from './WeatherDisplay.jsx'
