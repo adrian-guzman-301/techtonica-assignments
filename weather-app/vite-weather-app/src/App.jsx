@@ -22,7 +22,8 @@ function App() {
   const test = {
     main: { temp: 5000, humidity: 999999 },
     wind: {speed: 777 },
-    weather: [{ description: "hellfire" }]
+    weather: [{ description: "hellfire" }],
+    clouds: { all: 100 }
   }
 
   return (
