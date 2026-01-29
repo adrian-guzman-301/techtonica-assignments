@@ -4,7 +4,7 @@ import SubmitButton from './SubmitButton.jsx'
 import WeatherDisplay from './WeatherDisplay.jsx'
 
 function App() {
-
+  const [weatherData, setWeatherData] = useState(null)
 
   //test data
   const test = {
