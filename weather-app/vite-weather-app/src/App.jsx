@@ -9,6 +9,12 @@ function App() {
   const [city, setCity] = useState('')
   //save weather api response
   const [weatherData, setWeatherData] = useState(null)
+  //api test
+  function handleSubmit(event) {
+    event.preventDefault()
+    console.log('form submitted')
+    console.log('city:', city)
+  }
 
   //test data
   const test = {
