@@ -33,7 +33,7 @@ function App() {
       <input
         type="text"
         value={city}
-
+        onChange={(event) => setCity(event.target.value)}
       <SubmitButton handleClick={getWeather}/>
       <WeatherDisplay weatherData={weatherData || test} />
     </>
