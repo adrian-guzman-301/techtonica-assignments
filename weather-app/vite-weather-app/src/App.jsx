@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
   //store user inputted city
   const [city, setCity] = useState('')
-  //save api
+  //save weather api response
   const [weatherData, setWeatherData] = useState(null)
 
   //test data
