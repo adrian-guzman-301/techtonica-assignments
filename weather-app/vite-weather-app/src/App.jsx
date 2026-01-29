@@ -32,7 +32,9 @@ function App() {
     <>
       <input
         type="text"
+        //show whats stored in city state
         value={city}
+
         onChange={(event) => setCity(event.target.value)}
         placeholder="enter a city name"
         />
