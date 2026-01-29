@@ -4,17 +4,7 @@ import SubmitButton from './SubmitButton.jsx'
 import WeatherDisplay from './WeatherDisplay.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-  //store user inputted city
-  const [city, setCity] = useState('')
-  //save weather api response
-  const [weatherData, setWeatherData] = useState(null)
-  //api test
-  function handleSubmit(event) {
-    event.preventDefault()
-    console.log('form submitted')
-    console.log('city:', city)
-  }
+
 
   //test data
   const test = {
