@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <SubmitButton handleClick={getWeather}/>
-      <WeatherDisplay weatherData={test} />
+      <WeatherDisplay weatherData={weatherData || test} />
     </>
   )
 }
