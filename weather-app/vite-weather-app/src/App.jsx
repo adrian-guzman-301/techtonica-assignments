@@ -5,6 +5,7 @@ import WeatherDisplay from './WeatherDisplay.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [city, setCity] = useState('')
 
   //test data
   const test = {
