@@ -7,6 +7,9 @@ function App() {
   //store weather data via state
   const [weatherData, setWeatherData] = useState(null)
 
+  //fetch weather from server
+  
+
   //test data
   const test = {
     main: { temp: 5000, humidity: 999999 },
