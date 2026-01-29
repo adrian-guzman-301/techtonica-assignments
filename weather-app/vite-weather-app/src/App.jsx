@@ -5,7 +5,10 @@ import WeatherDisplay from './WeatherDisplay.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
+  //store user inputted city
   const [city, setCity] = useState('')
+  //save api
+  const [weatherData, setWeatherData] = useState(null)
 
   //test data
   const test = {
