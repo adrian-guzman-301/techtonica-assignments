@@ -9,6 +9,7 @@ function App() {
 
   //fetch weather from server
   function getWeather() {
+    console.log('who clicked that?')
     fetch('http://localhost:8080/weather?cityName=Anaheim')
       .then(response => response.json())
       .then(result => {
