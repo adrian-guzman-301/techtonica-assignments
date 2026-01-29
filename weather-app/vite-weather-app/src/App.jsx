@@ -34,6 +34,8 @@ function App() {
         type="text"
         value={city}
         onChange={(event) => setCity(event.target.value)}
+        placeholder="enter a city name"
+        />
       <SubmitButton handleClick={getWeather}/>
       <WeatherDisplay weatherData={weatherData || test} />
     </>
