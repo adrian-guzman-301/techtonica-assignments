@@ -8,7 +8,14 @@ function App() {
   const [weatherData, setWeatherData] = useState(null)
 
   //fetch weather from server
-  
+  function getWeather() {
+    fetch('http://localhost:8080/weather?cityName=Anaheim')
+      .then(response => response.json())
+      .then(result => {
+        console.log(result)
+        setWeatherData(result.data)
+      })
+  }
 
   //test data
   const test = {
