@@ -34,7 +34,7 @@ function App() {
         type="text"
         //show whats stored in city state
         value={city}
-
+        //updates city whenever user types
         onChange={(event) => setCity(event.target.value)}
         placeholder="enter a city name"
         />
