@@ -7,7 +7,7 @@ function App() {
   //store weather data via state
   const [weatherData, setWeatherData] = useState(null)
   //store city from user input
-  const [coty, setCity] = useState('')
+  const [city, setCity] = useState('')
 
   //fetch weather from server
   function getWeather() {
