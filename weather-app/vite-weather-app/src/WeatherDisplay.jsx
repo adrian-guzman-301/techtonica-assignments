@@ -6,6 +6,7 @@ function WeatherDisplay({ weatherData }) {
       <p>Wind speed: {weatherData.wind.speed} mph</p>
       <p>Vibe: {weatherData.weather[0].description}</p>
       <p>Humidity: {weatherData.main.humidity}%</p>
+      <p>Clouds: {weatherData.clouds.all}%</p>
     </div>
   )
 }
