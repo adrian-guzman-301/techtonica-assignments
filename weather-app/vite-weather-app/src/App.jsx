@@ -32,6 +32,7 @@ function App() {
     <>
       <input
         type="text"
+        value={city}
 
       <SubmitButton handleClick={getWeather}/>
       <WeatherDisplay weatherData={weatherData || test} />
