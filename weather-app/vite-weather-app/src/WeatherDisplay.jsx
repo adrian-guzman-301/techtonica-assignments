@@ -1,4 +1,6 @@
 function WeatherDisplay({ weatherData }) {
+  const icon = weatherData.weather[0].icon
+  
   return (
     <div>
       <h2>Weather Info</h2>
