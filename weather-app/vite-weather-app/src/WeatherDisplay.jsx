@@ -1,6 +1,6 @@
 function WeatherDisplay({ weatherData }) {
   const icon = weatherData.weather[0].icon
-  const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@2x.png`
+  const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`
   
   return (
     <div>
