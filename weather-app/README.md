@@ -70,4 +70,5 @@ A full-stack weather application that displays current weather information for a
 
 1. Error handling if user inputs an invalid city
 2. Responsive design
+3. Weather beyond cities, like ocean temp, various plants temp, etc.
 
