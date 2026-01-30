@@ -1,5 +1,5 @@
 //collectable trading cards objects in array
-const CARDS = [
+let CARDS = [
   {
     "id": "0001",
     "name": "Black Lotus",

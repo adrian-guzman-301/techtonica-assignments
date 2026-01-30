@@ -1,3 +1,4 @@
+//receive props from app.jsx
 export default function CoinFlipControls({ onFlip, flipCount }) {
   return (
     <div>
