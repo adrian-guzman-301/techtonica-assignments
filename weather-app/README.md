@@ -1,8 +1,3 @@
-# Nice-to-have/secondary or stretch goals
-
-1. Error handling if user inputs an invalid city
-2. Responsive design
-
 # Weather App
 
 A full-stack weather application that displays current weather information for any city using the OpenWeatherMap API.
@@ -70,3 +65,9 @@ A full-stack weather application that displays current weather information for a
 
 ## Screenshot
   ![Weather App Screenshot](weather-app-screenshot.png)
+
+# Nice-to-have/secondary or stretch goals
+
+1. Error handling if user inputs an invalid city
+2. Responsive design
+
