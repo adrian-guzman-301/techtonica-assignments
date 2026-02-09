@@ -30,6 +30,7 @@ app.get('/api/game', (req, res) => {
     const amount = req.query.amount
     const category = req.query.category
     const difficulty = req.query.difficulty
+    const type = req.query.type
 })
 
 
