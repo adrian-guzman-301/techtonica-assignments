@@ -25,8 +25,9 @@ app.get("/", (req, res) => {
 
 
   // //hardcode the game response for testing reasons to don't saturate my API call. 
-app.get('/api/game', (req, res) =>{
-    res.json(fakedata);
+app.get('/api/game', (req, res) => {
+    //res.json(fakedata);
+    const amount = req.query.amount
 })
 
 
