@@ -28,6 +28,7 @@ app.get("/", (req, res) => {
 app.get('/api/game', (req, res) => {
     //res.json(fakedata);
     const amount = req.query.amount
+    const category = req.query.category
 })
 
 
