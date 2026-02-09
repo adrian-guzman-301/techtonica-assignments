@@ -31,6 +31,8 @@ app.get('/api/game', (req, res) => {
     const category = req.query.category
     const difficulty = req.query.difficulty
     const type = req.query.type
+
+    let triviaApiUrl = `https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=${difficulty}&type=${type}`
 })
 
 
