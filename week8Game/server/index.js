@@ -26,13 +26,20 @@ app.get("/", (req, res) => {
 
   // //hardcode the game response for testing reasons to don't saturate my API call. 
 app.get('/api/game', (req, res) => {
-    //res.json(fakedata);
-    const amount = req.query.amount
-    const category = req.query.category
-    const difficulty = req.query.difficulty
-    const type = req.query.type
+  //res.json(fakedata);
+  const amount = req.query.amount
+  const category = req.query.category
+  const difficulty = req.query.difficulty
+  const type = req.query.type
 
-    let triviaApiUrl = `https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=${difficulty}&type=${type}`
+  let triviaApiUrl = `https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=${difficulty}&type=${type}`
+
+  fetch(triviaApiUrl)
+    .then(response => response.json())
+    .then(data => {
+      data.res
+    })
+
 })
 
 
