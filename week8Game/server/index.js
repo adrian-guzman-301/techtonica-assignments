@@ -37,7 +37,7 @@ app.get('/api/game', (req, res) => {
   fetch(triviaApiUrl)
     .then(response => response.json())
     .then(data => {
-      data.res
+      res.json(triviaApiUrl)
     })
 
 })
