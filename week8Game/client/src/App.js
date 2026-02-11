@@ -8,6 +8,10 @@ import GameSetup from './components/GameSetup'
 function App() {
   const [user, setUser] = useState("");
   const [gameStarted, setGameStarted] = useState(false);
+  const [questionCount, setQuestionCount] = useState(10);
+  const [category, setCategory] = useState(9);
+  const [difficulty, setDifficulty] = useState('easy');
+  const [questionType, setQuestionType] = useState('boolean');
   const handleUser = (text) => {
     setUser(text);
   }
