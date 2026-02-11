@@ -1,11 +1,14 @@
 import { useState } from 'react';
 
 const GameSetup = (props) => {
-  //10 questions is the default
+  //question defaults
   const [questionCount, setQuestionCount] = useState(10)
   const [category, setCategory] = useState(9)
   const [difficulty, setDifficulty] = useState('easy')
   const [questionType, setQuestionType] = useState('boolean')
+
+  //store category list from API
+  const [categories, setCategories] = useState([])
 
   return (
     <>
@@ -15,7 +18,13 @@ const GameSetup = (props) => {
         <option value={10}>10 questions</option>
         <option value={15}>15 questions</option>
       </select>
-      
+      <select value={category} onChange={(event => setCategory(event.target.value))}>
+        <option value={9}>general knowledge</option>
+        <option value={23}>history</option>
+        <option value={24}>politics</option>
+        <option value={15}>video games</option>
+      </select>
+
     </>
   )
 }
