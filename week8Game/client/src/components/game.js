@@ -21,9 +21,9 @@ const Game = (props) => {
     return (
         <div className="Container">
             <div className='question-count'>
-                <span>Question 1</span>/{questions.length}
+                <span>Question 1</span>/{questions ? questions.length : 0}
             </div>
-            {questions.map((question, index) => {
+            {questions && questions.map((question, index) => {
                 return <QuestionCard key={index} question={question} />
             })}
         </div>
