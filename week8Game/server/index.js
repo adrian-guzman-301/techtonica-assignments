@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
   // //hardcode the game response for testing reasons to don't saturate my API call. 
 app.get('/api/game', (req, res) => {
   //res.json(fakedata);
-  const amount = req.query.amount
+  const amount = req.query.amount || 10
   const category = req.query.category
   const difficulty = req.query.difficulty
   const type = req.query.type
@@ -37,7 +37,7 @@ app.get('/api/game', (req, res) => {
   fetch(triviaApiUrl)
     .then(response => response.json())
     .then(data => {
-      res.json(triviaApiUrl)
+      res.json(data)
     })
 
 })
