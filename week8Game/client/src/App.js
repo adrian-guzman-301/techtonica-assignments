@@ -3,6 +3,7 @@ import UserForm from './components/user.js';
 import Game from './components/game.js';
 import './App.css';
 import { useState } from "react";
+import GameSetup from './components/GameSetup.js'
 
 function App() {
   const [user, setUser] = useState("");
