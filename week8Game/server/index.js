@@ -39,6 +39,9 @@ app.get('/api/game', (req, res) => {
     .then(data => {
       res.json(data)
     })
+    .catch(error => {
+      res.status(500).json({ error })
+    })
 
 })
 
