@@ -28,9 +28,9 @@ app.get("/", (req, res) => {
 app.get('/api/game', (req, res) => {
   //res.json(fakedata);
   const amount = req.query.amount || 10
-  const category = req.query.category
-  const difficulty = req.query.difficulty
-  const type = req.query.type
+  const category = req.query.category || 9
+  const difficulty = req.query.difficulty || 'easy'
+  const type = req.query.type || 'boolean'
 
   let triviaApiUrl = `https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=${difficulty}&type=${type}`
 
