@@ -6,4 +6,11 @@ const GameSetup = (props) => {
   const [category, setCategory] = useState(9)
   const [difficulty, setDifficulty] = useState('easy')
   const [questionType, setQuestionType] = useState('boolean')
+
+  return (
+    <>
+      <h2>pick your question preferences! or you can just hit start to jump right in</h2>
+      {}
+    </>
+  )
 }
