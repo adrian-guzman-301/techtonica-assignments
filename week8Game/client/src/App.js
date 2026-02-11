@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       <Header user={user} />
-      <UserForm grabUser={handleUser} />
+      {!user ? <UserForm grabUser={handleUser} /> : null}
       {user && !gameStarted ? (
         <GameSetup 
         onStartGame={handleStartGame}
