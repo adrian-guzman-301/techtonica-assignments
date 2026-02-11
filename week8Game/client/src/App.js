@@ -23,8 +23,26 @@ function App() {
     <div className="App">
       <Header user={user} />
       <UserForm grabUser={handleUser} />
-      {user && !gameStarted ? <GameSetup onStartGame={handleStartGame}/> : null}
-      {user && gameStarted ? <Game /> : null}
+      {user && !gameStarted ? (
+        <GameSetup 
+        onStartGame={handleStartGame}
+        questionCount={questionCount}
+        setQuestionCount={setQuestionCount}
+        category={category}
+        setCategory={setCategory}
+        difficulty={difficulty}
+        setDifficulty={setDifficulty}
+        questionType={questionType}
+        setQuestionType={setQuestionType}
+        />
+      ) : null}
+      {user && gameStarted ? (
+        <Game 
+          questionCount={questionCount}
+          category={category}
+          difficulty={difficulty}
+          questionType={questionType}
+        />) : null}
     </div>
   );
 }
