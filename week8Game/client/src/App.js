@@ -8,17 +8,19 @@ import GameSetup from './components/GameSetup'
 function App() {
   const [user, setUser] = useState("");
   const [gameStarted, setGameStarted] = useState(false);
-  const handleUser = (text) =>{
+  const handleUser = (text) => {
     setUser(text);
-
+  }
+  const handleStartGame = () => {
+  setGameStarted(true)
   }
 
   return (
     <div className="App">
       <Header user={user} />
       <UserForm grabUser={handleUser} />
-      {user ? <GameSetup /> : null}
-      {user ? <Game /> : null}
+      {user && !gameStarted ? <GameSetup onStartGame={handleStartGame}/> : null}
+      {user && gameStarted ? <Game /> : null}
     </div>
   );
 }
