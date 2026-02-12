@@ -1,8 +1,8 @@
 //hook that manages data
 import {useState} from 'react'
 import './App.css'
-import CoinFlipControls from './CoinFlipControls'
-import DogImageRender from './DogImageRender'
+import CoinFlipControls from './assets/CoinFlipControls'
+import DogImageRender from './assets/DogImageRender'
 
 
 function App() {
