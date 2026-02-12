@@ -4,17 +4,27 @@ import QuestionCard from "./questioncard";
 const Game = (props) => {
 
     const [questions, setQuestions] = useState([]);
+    const [userAnswers, setUserAnswers] = useState({})
 
     const loadData = () => {
-        fetch('http://localhost:5000/api/game')
-            .then((response) => response.json())
-            .then(data => {
-                console.log("This is line 11", data.results);
+
+    const url = `http://localhost:5000/api/game?amount=${props.questionCount}&category=${props.category}&difficulty=${props.difficulty}&type=${props.questionType}`
+
+    fetch(url)
+        .then((response) => response.json())
+        .then(data => {
+            console.log("This is line 11", data.results);
+            if (data.results) {
                 setQuestions(data.results);
-            })
-    }
+            }
+        })
+        .catch(error => {
+            console.log("Fetch error:", error);
+        })
+}
 
     useEffect(() => {
+        console.log('useEffect is running')
         loadData();
     }, [])
 
