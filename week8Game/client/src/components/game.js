@@ -14,6 +14,10 @@ const Game = (props) => {
       setUserAnswers(updatedAnswers)
       console.log(`question ${questionIndex}: user selected "${selectedAnswer}"`)
     }
+    const handleSubmit = () => {
+      console.log("Submit button clicked!");
+      console.log("User answers:", userAnswers);
+    }
 
     const loadData = () => {
 
@@ -46,10 +50,11 @@ const Game = (props) => {
                 return <QuestionCard 
                   key={index} 
                   question={question}
-                  questonIndex={index}
+                  questionIndex={index}
                   onAnswerSelect={handleAnswerSelect}
                   />
             })}
+            <button onClick={handleSubmit}>submit answers!</button>
         </div>
     )
 
