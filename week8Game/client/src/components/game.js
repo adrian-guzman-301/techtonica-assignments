@@ -9,6 +9,8 @@ const Game = (props) => {
     const updatedAnswers = {...userAnswers}
     //add new answer to copy
     updatedAnswers[questionIndex] = selectedAnswer
+    //update state
+    setUserAnswers(updatedAnswers)
     
     }
 
