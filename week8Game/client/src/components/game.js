@@ -7,8 +7,8 @@ const Game = (props) => {
     const [userAnswers, setUserAnswers] = useState({})
     //copy current answers
     const updatedAnswers = {...userAnswers}
-
-    
+    //add new answer to copy
+    updatedAnswers[questionIndex] = selectedAnswer
     
     }
 
