@@ -5,6 +5,12 @@ const Game = (props) => {
 
     const [questions, setQuestions] = useState([]);
     const [userAnswers, setUserAnswers] = useState({})
+    //store user answers
+    const handleAnserSelect = (questionIndex, selectedAnswer) => {
+      setUserAnswers({
+
+      })
+    }
 
     const loadData = () => {
 
