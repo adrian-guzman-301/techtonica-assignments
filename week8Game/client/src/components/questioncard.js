@@ -18,7 +18,7 @@ const QuestionCard = (props) => {
             </>
           ) : (
               allAnswers.map((answer, index) => {
-                return <button key={index}>{answer}</button>
+                return <button onClick={() => props.onAnswerSelect(props.questionIndex, answer)} key={index}>{answer}</button>
               })
           )}
         </div>
