@@ -4,14 +4,15 @@ import QuestionCard from "./questioncard";
 const Game = (props) => {
 
     const [questions, setQuestions] = useState([]);
-    const [userAnswers, setUserAnswers] = useState({})
-    //copy current answers
-    const updatedAnswers = {...userAnswers}
-    //add new answer to copy
-    updatedAnswers[questionIndex] = selectedAnswer
-    //update state
-    setUserAnswers(updatedAnswers)
-    
+    const [userAnswers, setUserAnswers] = useState([])
+    const handleAnswerSelect = (questionIndex, selectedAnswer) => {
+      //copy current answers
+      const updatedAnswers = [...userAnswers]
+      //add new answer to copy
+      updatedAnswers[questionIndex] = selectedAnswer
+      //update state
+      setUserAnswers(updatedAnswers)
+      console.log(`question ${questionIndex}: user selected "${selectedAnswer}"`)
     }
 
     const loadData = () => {
@@ -42,7 +43,12 @@ const Game = (props) => {
                 <span>Question 1</span>/{questions ? questions.length : 0}
             </div>
             {questions && questions.map((question, index) => {
-                return <QuestionCard key={index} question={question} />
+                return <QuestionCard 
+                  key={index} 
+                  question={question}
+                  questonIndex={index}
+                  onAnswerSelect={handleAnswerSelect}
+                  />
             })}
         </div>
     )
