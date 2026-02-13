@@ -5,6 +5,9 @@ const Game = (props) => {
 
     const [questions, setQuestions] = useState([]);
     const [userAnswers, setUserAnswers] = useState([])
+    const [gameFinished, setGameFinished] = useState(false)
+    const [score, setScore] = useState(0)
+
     const handleAnswerSelect = (questionIndex, selectedAnswer) => {
       //copy current answers
       const updatedAnswers = [...userAnswers]
@@ -15,9 +18,14 @@ const Game = (props) => {
       console.log(`question ${questionIndex}: user selected "${selectedAnswer}"`)
     }
     const handleSubmit = () => {
-      console.log("Submit button clicked!");
-      console.log("User answers:", userAnswers);
+    let correctCount = 0;
+    
+    for (let i = 0; i < questions.length; i++) {
+        if (userAnswers[i] === questions[i].correct_answer) {
+            correctCount++;
+        }
     }
+}
 
     const loadData = () => {
 
