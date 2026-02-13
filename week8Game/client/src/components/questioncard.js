@@ -13,8 +13,8 @@ const QuestionCard = (props) => {
         <div className='answer-section'>
           {props.question.type === 'boolean' ? (
             <>
-              <button>True</button>
-              <button>False</button>
+              <button onClick={() => props.onAnswerSelect(props.questionIndex, "True")}>True</button>
+              <button onClick={() => props.onAnswerSelect(props.questionIndex, "False")}>False</button>
             </>
           ) : (
               allAnswers.map((answer, index) => {
