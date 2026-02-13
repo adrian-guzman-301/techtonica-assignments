@@ -5,11 +5,11 @@ const Game = (props) => {
 
     const [questions, setQuestions] = useState([]);
     const [userAnswers, setUserAnswers] = useState({})
-    //store user answers
-    const handleAnserSelect = (questionIndex, selectedAnswer) => {
-      setUserAnswers({
+    //copy current answers
+    const updatedAnswers = {...userAnswers}
 
-      })
+    
+    
     }
 
     const loadData = () => {
