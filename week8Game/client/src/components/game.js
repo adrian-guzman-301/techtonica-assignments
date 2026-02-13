@@ -25,6 +25,8 @@ const Game = (props) => {
             correctCount++;
         }
     }
+    setScore(correctCount)
+    setGameFinished(true)
 }
 
     const loadData = () => {
@@ -49,22 +51,38 @@ const Game = (props) => {
         loadData();
     }, [])
 
-    return (
-        <div className="Container">
-            <div className='question-count'>
-                <span>Question 1</span>/{questions ? questions.length : 0}
+return (
+    <div className="Container">
+        {gameFinished === false && (
+            <>
+                <div className='question-count'>
+                    <span>Question 1</span>/{questions ? questions.length : 0}
+                </div>
+                {questions && questions.map((question, index) => {
+                    return <QuestionCard 
+                      key={index} 
+                      question={question}
+                      questionIndex={index}
+                      onAnswerSelect={handleAnswerSelect}
+                    />
+                })}
+                <button onClick={handleSubmit}>Submit Answers</button>
+            </>
+        )}
+        
+        {gameFinished === true && (
+            <div>
+                <h2>game over!</h2>
+                <p>you got {score} out of {questions.length} correct!</p>
+                {score >= questions.length / 2 ? (
+                    <p>you win!</p>
+                ) : (
+                    <p>oh no you lost! try again!</p>
+                )}
             </div>
-            {questions && questions.map((question, index) => {
-                return <QuestionCard 
-                  key={index} 
-                  question={question}
-                  questionIndex={index}
-                  onAnswerSelect={handleAnswerSelect}
-                  />
-            })}
-            <button onClick={handleSubmit}>submit answers!</button>
-        </div>
-    )
+        )}
+    </div>
+)
 
 }
 
