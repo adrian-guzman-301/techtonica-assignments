@@ -15,7 +15,6 @@ const Game = (props) => {
       updatedAnswers[questionIndex] = selectedAnswer
       //update state
       setUserAnswers(updatedAnswers)
-      console.log(`question ${questionIndex}: user selected "${selectedAnswer}"`)
     }
     const handleSubmit = () => {
     let correctCount = 0;
