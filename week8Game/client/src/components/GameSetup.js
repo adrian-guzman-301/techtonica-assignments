@@ -11,15 +11,16 @@ const GameSetup = (props) => {
         <option value={20}>20 questions</option>
       </select>
       <select value={props.category} onChange={(event) => props.setCategory(event.target.value)}>
-        <option value={9}>general knowledge</option>
-        <option value={23}>history</option>
-        <option value={24}>politics</option>
-        <option value={15}>video games</option>
+        
       </select>
       <select value={props.difficulty} onChange={(event) => props.setDifficulty(event.target.value)}>
         <option value={1}>easy</option>
         <option value={2}>medium</option>
         <option value={3}>hard</option>
+      </select>
+      <select value={props.questionType} onChange={(event) => props.setQuestionType(event.target.value)}>
+        <option value={'boolean'}>true/false</option>
+        <option value={'multiple'}>multiple choice</option>
       </select>
     </>
   )
