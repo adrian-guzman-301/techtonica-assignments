@@ -24,6 +24,7 @@ const GameSetup = (props) => {
         <option value={19}>math</option>
         <option value={20}>mythology</option>
         <option value={21}>sports</option>
+        <option value={22}>geography</option>
       </select>
       <select value={props.difficulty} onChange={(event) => props.setDifficulty(event.target.value)}>
         <option value={1}>easy</option>
