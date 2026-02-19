@@ -10,7 +10,8 @@ looking at the example eventonica gif, it looks like i need:
     f. delete
   2. components:
     a. the entire app
-    b. row component and its parts:
+    b. row component 
+    c. event component:
       1. favorite/heart option
       2. name
       3. date
@@ -18,5 +19,6 @@ looking at the example eventonica gif, it looks like i need:
       5. category
       6. edit
       7. delete
-    c. 
+    d. search component
+    e. filter component
 **********************************************/
