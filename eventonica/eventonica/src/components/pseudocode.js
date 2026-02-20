@@ -1,8 +1,8 @@
 /**********************************************
 looking at the example eventonica gif, it looks like i need:
    a. components:
-    1. the entire app
-    2. event-info component 
+    1. the entire app--App
+    2. event-info component--EventCard
       1. favorite/heart option
       2. name
       3. date
@@ -10,9 +10,9 @@ looking at the example eventonica gif, it looks like i need:
       5. category
       6. edit
       7. delete
-    3. search component
-    4. filter component
-    5. add event component/edit event component--event.jsx
+    3. search component--SearchBar
+    4. filter component--FilterBar
+    5. add event component/edit event component--EventForm
 
 user flow:
 1. i want there to initially be some events so users can start using CRUD immediately (besides create)
