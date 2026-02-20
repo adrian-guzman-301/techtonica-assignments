@@ -4,7 +4,7 @@ import pool from './db.js';
 
 const app = express();
 app.use(express.json())
-const PORT = 3001;
+const PORT = 3002;
 
 //retrieve card data and format it into json
 app.get('/cards', (req, res) => {
