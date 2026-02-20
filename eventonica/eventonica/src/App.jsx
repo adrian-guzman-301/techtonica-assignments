@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import EventCard from './EventCard'
 
 const events = [
   { id: 1, name: 'cat rave', date: '12-31-26' , description: 'cat costumes and loud music', category: 'music' , isFavorite: true },
@@ -11,7 +12,9 @@ function App() {
 
   return (
     <>
-      
+      {events.map(event => {
+       return <EventCard event={event}/>
+      })}
     </>
   )
 }
