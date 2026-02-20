@@ -1,12 +1,12 @@
-import './App.jsx'
+import '../App.jsx'
 
-function EventCard(event) {
+function EventCard(props) {
   return (
     <>
-      <p>{event.name}</p>
-      <p>{event.date}</p>
-      <p>{event.description}</p>
-      <p>{event.category}</p>
+      <p>name: {props.event.name}</p>
+      <p>date: {props.event.date}</p>
+      <p>description: {props.event.description}</p>
+      <p>category: {props.event.category}</p>
     </>
   )
 }
