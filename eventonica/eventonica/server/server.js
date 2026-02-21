@@ -14,9 +14,12 @@ const events = [
 /* 
 db schema
  - i think i only need one table, since i am only dealing with events. the table would be able to get added to, deleted from, and edited on. 
- 
+
  - as for the columns of the table, i'd say a column for each: id, name, date, description, category, and isFavorite
 
+for each column:
+
+id=serial, name=varchar, date=date, description=varchar, category=varchar, isFavorite=boolean
 */
 
 app.get('/', (req, res) => {
