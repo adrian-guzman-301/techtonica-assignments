@@ -20,6 +20,11 @@ const client = new Client({
   port: 5432,
 })
 
+client.connect()
+  .then(() => 
+  console.log(`connected to a goated database`)
+)
+
 /* 
 db schema
  - i think i only need one table, since i am only dealing with events. the table would be able to get added to, deleted from, and edited on. 
