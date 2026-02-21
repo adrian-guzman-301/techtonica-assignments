@@ -5,7 +5,11 @@ import EventCard from './components/EventCard'
 function App() {
   const [events, setEvents] = useState([])
   useEffect(() => {
-    fetch('http://localhost:3000/')
+    const localData = `http://localhost:3000/`
+    fetch(localData)
+    .then(res => res.json())
+    .then(data => setEvents(data))
+    .catch(error => console.log(error))
   }, [])
 
   return (
