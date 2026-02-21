@@ -13,6 +13,13 @@ const events = [
   { id: 3, name: 'graduation', date: '06-25-26', description: `look back at how far you've come and look forward to exciting opportunities`, category: 'celebration' , isFavorite: false },
 ]
 
+const client = new Client({
+  user: 'tpl925_3',
+  host: 'localhost',
+  database: 'events',
+  port: 5432,
+})
+
 /* 
 db schema
  - i think i only need one table, since i am only dealing with events. the table would be able to get added to, deleted from, and edited on. 
