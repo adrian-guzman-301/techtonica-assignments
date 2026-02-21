@@ -1,5 +1,7 @@
 import express from 'express'
 import cors from 'cors'
+import pg from 'pg'
+const { Pool, Client } = pg
 
 const app = express()
 const port = 3000
