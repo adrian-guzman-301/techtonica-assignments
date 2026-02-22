@@ -36,10 +36,14 @@ for each column:
 id=serial, name=varchar, date=date, description=varchar, category=varchar, isFavorite=boolean
 */
 
+
+//get all current events from db
 app.get('/', (req, res) => {
   client.query('SELECT * FROM events')
   .then(data => res.json(data.rows))
 })
+
+
 
 app.listen(port, () => {
   console.log(`listening real good on port ${port}`)
