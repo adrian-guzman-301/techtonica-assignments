@@ -44,10 +44,12 @@ app.get('/', (req, res) => {
 })
 
 //delete events by their id
-app.delete('localhost:3000/event/:id', (req, res) => {
+app.delete('/event/:id', (req, res) => {
   client.query('DELETE FROM events WHERE id=$1', [req.params.id])
-  .then(res.send('event deleted'))
+  .then(result => res.send('event deleted'))
 })
+
+
 
 app.listen(port, () => {
   console.log(`listening real good on port ${port}`)
