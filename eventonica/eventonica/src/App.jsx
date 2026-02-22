@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import EventCard from './components/EventCard'
+import cors from 'cors'
 
 function App() {
   const [events, setEvents] = useState([])
   useEffect(() => {
-    const localData = `http://localhost:3000/`
-    fetch(localData)
+    fetch(`http://localhost:3000/`)
     .then(res => res.json())
     .then(data => setEvents(data))
     .catch(error => console.log(error))
