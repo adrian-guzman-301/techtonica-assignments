@@ -38,7 +38,7 @@ id=serial, name=varchar, date=date, description=varchar, category=varchar, isFav
 
 app.get('/', (req, res) => {
   client.query('SELECT * FROM events')
-  .then(data => res.json(data))
+  .then(data => res.json(data.rows))
 })
 
 app.listen(port, () => {
