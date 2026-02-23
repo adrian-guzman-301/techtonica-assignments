@@ -5,7 +5,10 @@ const { Pool, Client } = pg
 
 const app = express()
 const port = 3000
+//tell my browser it's okay
 app.use(cors())
+//enable express to use req.body
+app.use(express.json())
 
 const events = [
   { id: 1, name: 'cat rave', date: '12-31-26' , description: 'cat costumes and loud music', category: 'music' , isFavorite: true },
@@ -41,15 +44,22 @@ id=serial, name=varchar, date=date, description=varchar, category=varchar, isFav
 app.get('/', (req, res) => {
   client.query('SELECT * FROM events')
   .then(data => res.json(data.rows))
+  console.log('GET successful')
 })
 
 //delete events by their id
 app.delete('/event/:id', (req, res) => {
   client.query('DELETE FROM events WHERE id=$1', [req.params.id])
   .then(result => res.send('event deleted'))
+  console.log('DELETE successful')
 })
 
-
+//add events
+app.post('/event', (req, res) => {
+  client.query('INSERT INTO events (name, date, description, category, isfavorite) VALUES ($1, $2, $3, $4, $5)', [req.body.name, req.body.date, req.body.description, req.body.category, req.body.isfavorite])
+  .then(result => res.send('event added'))
+  console.log('POST successful')
+})
 
 app.listen(port, () => {
   console.log(`listening real good on port ${port}`)
