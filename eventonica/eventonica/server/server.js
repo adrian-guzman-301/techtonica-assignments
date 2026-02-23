@@ -56,7 +56,11 @@ app.post('/event', (req, res) => {
 })
 
 //update events
-
+app.put('/event/:id', (req, res) => {
+  client.query('UPDATE events SET name=$1, date=$2, description=$3, category=$4, isfavorite=$5 WHERE id=$6', [req.body.name, req.body.date, req.body.description, req.body.category, req.body.isfavorite, req.params.id])
+  .then(result => res.send('event updated'))
+  console.log('PUT successful!')
+})
 
 app.listen(port, () => {
   console.log(`listening real good on port ${port}`)
