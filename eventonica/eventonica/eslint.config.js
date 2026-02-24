@@ -26,4 +26,5 @@ export default defineConfig([
       'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },
+  { files: ['**/*.test.jsx', '**/*.spec.jsx'], // Target your test files plugins: { vitest }, rules: { ...vitest.configs.recommended.rules, // Optional: adds best practices }, languageOptions: { globals: { ...vitest.environments.env.globals, // This defines describe, test, etc. }, }, },
 ])

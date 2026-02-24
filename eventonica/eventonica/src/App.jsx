@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import EventCard from './components/EventCard'
-import cors from 'cors'
 
 function App() {
   const [events, setEvents] = useState([])
