@@ -2,10 +2,13 @@ function Form() {
   return (
     <>
       <form action={`http://localhost:3000`}>
-        <label></label>
+        <label for="name">event name:</label>
         <input id="name"/>
-        <input id="date" />
+        <label for="date">date:</label>
+        <input id="date"/>
+        <label for="description">description:</label>
         <input id="description" />
+        <label for="category">category:</label>
         <input id="category" />
       </form>
     </>
