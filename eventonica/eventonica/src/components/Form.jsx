@@ -5,11 +5,12 @@ function Form() {
         <label for="name">event name:</label>
         <input id="name"/>
         <label for="date">date:</label>
-        <input id="date"/>
+        <input id="date" type="date"/>
         <label for="description">description:</label>
         <input id="description" />
         <label for="category">category:</label>
         <input id="category" />
+        <button type="submit">submit</button>
       </form>
     </>
   )
