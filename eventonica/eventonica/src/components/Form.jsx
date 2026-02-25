@@ -5,8 +5,7 @@ function Form() {
   const [date, setDate] = useState('') 
   const [description, setDescription] = useState('')
   const [category, setCategory] = useState('')
-
-
+  const [isFavorite, setIsFavorite] = useState(false)
 
   return (
     <>
