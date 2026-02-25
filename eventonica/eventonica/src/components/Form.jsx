@@ -4,7 +4,9 @@ function Form() {
   const [eventName, setEventName] = useState('')
   const [date, setDate] = useState('') 
   const [description, setDescription] = useState('')
-  
+  const [category, setCategory] = useState('')
+
+
 
   return (
     <>
