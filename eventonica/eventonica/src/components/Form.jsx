@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
 function Form() {
+  const [eventName, setEventName] = useState('')
+
   return (
     <>
       <form action={`http://localhost:3000`}>
