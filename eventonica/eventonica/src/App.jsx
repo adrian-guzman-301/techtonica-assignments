@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import EventCard from './components/EventCard'
+import Form from './components/Form'
 
 function App() {
   const [events, setEvents] = useState([])
@@ -16,6 +17,7 @@ function App() {
       {events.map(event => {
        return <EventCard event={event}/>
       })}
+      <Form />
     </>
   )
 }
