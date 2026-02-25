@@ -7,9 +7,13 @@ function Form() {
   const [category, setCategory] = useState('')
   const [isFavorite, setIsFavorite] = useState(false)
 
+  const handleNameChange = (event) => {
+    setEventName(event.target.eventName)
+  }
+
   return (
     <>
-      <form action={`http://localhost:3000`}>
+      <form action={`http://localhost:3000`} onSubmit={''}>
         <label for="name">event name:</label>
         <input id="name"/>
         <label for="date">date:</label>
