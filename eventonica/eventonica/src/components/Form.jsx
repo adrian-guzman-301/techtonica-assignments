@@ -2,7 +2,10 @@ import { useState } from 'react'
 
 function Form() {
   const [eventName, setEventName] = useState('')
-  const [date, setDate] = useState('')
+  const [date, setDate] = useState('') 
+  const [description, setDescription] = useState('')
+  
+
   return (
     <>
       <form action={`http://localhost:3000`}>
