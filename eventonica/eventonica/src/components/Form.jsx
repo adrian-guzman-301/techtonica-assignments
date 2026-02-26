@@ -10,6 +10,9 @@ function Form() {
   const handleNameChange = (event) => {
     setEventName(event.target.value)
   }
+  const handleDateChange = (event) => {
+    setDateChange(event.target.value)
+  }
 
   function handleSubmit(event) {
     console.log('hello handle submit!')
