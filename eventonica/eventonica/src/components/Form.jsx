@@ -19,6 +19,9 @@ function Form() {
   const handleCategoryChange = (event) => {
     setCategoryChange(event.target.value)
   }
+  const handleFavoriteChange = (event) => {
+    setFavoriteChange(event.target.value)
+  }
 
   function handleSubmit(event) {
     console.log('hello handle submit!')
