@@ -8,7 +8,7 @@ function Form() {
   const [isFavorite, setIsFavorite] = useState(false)
 
   const handleNameChange = (event) => {
-    setEventName(event.target.eventName)
+    setEventName(event.target.value)
   }
 
   function handleSubmit(event) {
@@ -35,7 +35,7 @@ function Form() {
         <label for="name">event name:</label>
         <input id="name" value={eventName} onChange={handleNameChange}/>
         <label for="date">date:</label>
-        <input id="date" type="date"/>
+        <input id="date" type="date"value={date}/>
         <label for="description">description:</label>
         <input id="description" />
         <label for="category">category:</label>
