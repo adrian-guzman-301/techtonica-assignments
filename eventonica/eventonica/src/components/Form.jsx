@@ -16,6 +16,9 @@ function Form() {
   const handleDescriptonChange = (event) => {
     setDescriptionChange(event.target.value)
   }
+  const handleCategoryChange = (event) => {
+    setCategoryChange(event.target.value)
+  }
 
   function handleSubmit(event) {
     console.log('hello handle submit!')
