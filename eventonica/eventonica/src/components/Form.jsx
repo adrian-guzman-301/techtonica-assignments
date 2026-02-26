@@ -12,6 +12,7 @@ function Form() {
   }
 
   function handleSubmit(event) {
+    console.log('hello handle submit!')
     event.preventDefault();
     fetch(`http://localhost:3000/event`, {
       headers: {
@@ -30,7 +31,7 @@ function Form() {
 
   return (
     <>
-      <form action={`http://localhost:3000`} onSubmit={''}>
+      <form action={`http://localhost:3000`} onSubmit={handleSubmit}>
         <label for="name">event name:</label>
         <input id="name" value={eventName} onChange={handleNameChange}/>
         <label for="date">date:</label>
@@ -39,7 +40,7 @@ function Form() {
         <input id="description" />
         <label for="category">category:</label>
         <input id="category" />
-        <button type="submit" onSubmit={handleSubmit}>submit</button>
+        <button type="submit">submit</button>
       </form>
     </>
   )
