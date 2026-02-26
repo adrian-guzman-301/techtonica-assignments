@@ -47,7 +47,7 @@ function Form() {
         <label for="name">event name:</label>
         <input id="name" value={eventName} onChange={handleNameChange}/>
         <label for="date">date:</label>
-        <input id="date" type="date"value={date}/>
+        <input id="date" type="date"value={date} onChange={handleDateChange}/>
         <label for="description">description:</label>
         <input id="description" />
         <label for="category">category:</label>
