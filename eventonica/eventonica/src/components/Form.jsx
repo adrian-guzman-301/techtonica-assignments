@@ -51,7 +51,7 @@ function Form() {
         <label for="description">description:</label>
         <input id="description" value={description} onChange={handleDescriptonChange}/>
         <label for="category">category:</label>
-        <input id="category" />
+        <input id="category" value={description} onChange={handleCategoryChange}/>
         <button type="submit">submit</button>
       </form>
     </>
