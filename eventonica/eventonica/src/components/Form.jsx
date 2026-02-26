@@ -13,7 +13,10 @@ function Form() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    fetch(`http://localhost:3000` {
+    fetch(`http://localhost:3000/event`, {
+      headers: {
+        'Content-Type': `application/JSON`
+      },
       method: 'POST',
       body: JSON.stringify({
         name: eventName,
