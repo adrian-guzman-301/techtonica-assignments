@@ -14,6 +14,8 @@ function App() {
 
   return (
     <>
+      <h1>eventonica</h1>
+      <h3>browse events and edit your own below</h3>
       {events.map(event => {
        return <EventCard event={event}/>
       })}
