@@ -39,7 +39,7 @@ function Form() {
         <input id="description" />
         <label for="category">category:</label>
         <input id="category" />
-        <button type="submit">submit</button>
+        <button type="submit" onSubmit={handleSubmit}>submit</button>
       </form>
     </>
   )
