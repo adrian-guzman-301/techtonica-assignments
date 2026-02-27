@@ -11,16 +11,16 @@ function Form() {
     setEventName(event.target.value)
   }
   const handleDateChange = (event) => {
-    setDateChange(event.target.value)
+    setDate(event.target.value)
   }
   const handleDescriptonChange = (event) => {
-    setDescriptionChange(event.target.value)
+    setDescription(event.target.value)
   }
   const handleCategoryChange = (event) => {
-    setCategoryChange(event.target.value)
+    setCategory(event.target.value)
   }
   const handleFavoriteChange = (event) => {
-    setFavoriteChange(event.target.value)
+    setFavorite(event.target.value)
   }
 
   function handleSubmit(event) {
@@ -51,7 +51,7 @@ function Form() {
         <label for="description">description:</label>
         <input id="description" value={description} onChange={handleDescriptonChange}/>
         <label for="category">category:</label>
-        <input id="category" value={description} onChange={handleCategoryChange}/>
+        <input id="category" value={category} onChange={handleCategoryChange}/>
         <button type="submit">submit</button>
       </form>
     </>
