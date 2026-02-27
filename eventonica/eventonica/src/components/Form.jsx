@@ -23,8 +23,8 @@ function Form() {
     setFavorite(event.target.value)
   }
 
-  function handleSubmit(event) {
-    console.log('hello handle submit!')
+  function handleDelete(event) {
+    console.log('hello handle delete!')
     event.preventDefault();
     fetch(`http://localhost:3000/event`, {
       headers: {
@@ -43,7 +43,7 @@ function Form() {
 
   return (
     <>
-      <form action={`http://localhost:3000`} onSubmit={handleSubmit}>
+      <form action={`http://localhost:3000`}>
         <label for="name">event name:</label>
         <input id="name" value={eventName} onChange={handleNameChange}/>
         <label for="date">date:</label>
@@ -52,7 +52,7 @@ function Form() {
         <input id="description" value={description} onChange={handleDescriptonChange}/>
         <label for="category">category:</label>
         <input id="category" value={category} onChange={handleCategoryChange}/>
-        <button type="submit">submit</button>
+        <button type="submit" onClick={handleAdd}>add event!</button>
       </form>
     </>
   )
