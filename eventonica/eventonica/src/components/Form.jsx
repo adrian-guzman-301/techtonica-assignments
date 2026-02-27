@@ -23,8 +23,8 @@ function Form() {
     setFavorite(event.target.value)
   }
 
-  function handleDelete(event) {
-    console.log('hello handle delete!')
+  function handleAdd(event) {
+    console.log('hello add event!')
     event.preventDefault();
     fetch(`http://localhost:3000/event`, {
       headers: {
@@ -41,6 +41,24 @@ function Form() {
     })
   }
 
+  // function handleDelete(event) {
+  //   console.log('hello add event!')
+  //   event.preventDefault();
+  //   fetch(`http://localhost:3000/event`, {
+  //     headers: {
+  //       'Content-Type': `application/JSON`
+  //     },
+  //     method: 'PUT',
+  //     body: JSON.stringify({
+  //       name: eventName,
+  //       date: date,
+  //       description: description,
+  //       category: category,
+  //       isFavorite: isFavorite
+  //     })
+  //   })
+  // }
+
   return (
     <>
       <form action={`http://localhost:3000`}>
@@ -53,9 +71,9 @@ function Form() {
         <label for="category">category:</label>
         <input id="category" value={category} onChange={handleCategoryChange}/>
         <button type="submit" onClick={handleAdd}>add event!</button>
-        <button type="submit" onClick={handleDelete}>delete event!</button>
-        <button type="submit" onClick={handleEdit}>edit event!</button>
-        <button type="submit" onClick={handleGet}>get events!</button>
+        {/* <button type="submit" onClick={handleDelete}>delete event!</button> */}
+        {/* <button type="submit" onClick={handleEdit}>edit event!</button>
+        <button type="submit" onClick={handleGet}>get events!</button> */}
       </form>
     </>
   )
