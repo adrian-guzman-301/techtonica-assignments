@@ -53,6 +53,7 @@ function Form() {
         <label for="category">category:</label>
         <input id="category" value={category} onChange={handleCategoryChange}/>
         <button type="submit" onClick={handleAdd}>add event!</button>
+        <button type="submit" onClick={handleDelete}>add event!</button>
       </form>
     </>
   )
