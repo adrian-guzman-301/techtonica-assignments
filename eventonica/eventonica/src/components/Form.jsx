@@ -6,6 +6,7 @@ function Form() {
   const [description, setDescription] = useState('')
   const [category, setCategory] = useState('')
   const [isFavorite, setIsFavorite] = useState(false)
+  const [id, setId] = useState('')
 
   const handleNameChange = (event) => {
     setEventName(event.target.value)
@@ -41,23 +42,19 @@ function Form() {
     })
   }
 
-  // function handleDelete(event) {
-  //   console.log('hello add event!')
-  //   event.preventDefault();
-  //   fetch(`http://localhost:3000/event`, {
-  //     headers: {
-  //       'Content-Type': `application/JSON`
-  //     },
-  //     method: 'PUT',
-  //     body: JSON.stringify({
-  //       name: eventName,
-  //       date: date,
-  //       description: description,
-  //       category: category,
-  //       isFavorite: isFavorite
-  //     })
-  //   })
-  // }
+  function handleDelete(event) {
+    console.log('hello add event!')
+    event.preventDefault();
+    fetch(`http://localhost:3000/event/:id`, {
+      headers: {
+        'Content-Type': `application/JSON`
+      },
+      method: 'DELETE',
+      body: JSON.stringify({
+        id: 
+      })
+    })
+  }
 
   return (
     <>
@@ -71,7 +68,7 @@ function Form() {
         <label for="category">category:</label>
         <input id="category" value={category} onChange={handleCategoryChange}/>
         <button type="submit" onClick={handleAdd}>add event!</button>
-        {/* <button type="submit" onClick={handleDelete}>delete event!</button> */}
+        <button type="submit" onClick={handleDelete}>delete event!</button>
         {/* <button type="submit" onClick={handleEdit}>edit event!</button>
         <button type="submit" onClick={handleGet}>get events!</button> */}
       </form>
