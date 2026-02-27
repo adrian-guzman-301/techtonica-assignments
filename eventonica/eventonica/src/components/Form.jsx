@@ -46,9 +46,9 @@ function Form() {
   }
 
   function handleDelete(event) {
-    console.log('hello add event!')
+    console.log('hello delete event!')
     event.preventDefault();
-    fetch(`http://localhost:3000/event/:id`, {
+    fetch(`http://localhost:3000/event/${id}`, {
       headers: {
         'Content-Type': `application/JSON`
       },
@@ -71,9 +71,9 @@ function Form() {
         <label for="category">category:</label>
         <input id="category" value={category} onChange={handleCategoryChange}/>
         <label for="id">id:</label>
-        <input id="id" value={id} onChange={handle}/>
-        <button type="submit" onClick={handleAdd}>add event!</button>
-        <button type="submit" onClick={handleDelete}>delete event!</button>
+        <input id="id" value={id} onChange={handleIdChange}/>
+        <button type="button" onClick={handleAdd}>add event!</button>
+        <button type="button" onClick={handleDelete}>delete event!</button>
         {/* <button type="submit" onClick={handleEdit}>edit event!</button>
         <button type="submit" onClick={handleGet}>get events!</button> */}
       </form>
