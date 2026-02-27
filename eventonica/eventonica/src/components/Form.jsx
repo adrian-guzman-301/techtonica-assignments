@@ -20,6 +20,9 @@ function Form() {
   const handleCategoryChange = (event) => {
     setCategory(event.target.value)
   }
+  const handleIdChange = (event) => {
+    setId(event.target.value)
+  }
   const handleFavoriteChange = (event) => {
     setFavorite(event.target.value)
   }
@@ -51,7 +54,7 @@ function Form() {
       },
       method: 'DELETE',
       body: JSON.stringify({
-        id: 
+        id: id,
       })
     })
   }
@@ -67,6 +70,8 @@ function Form() {
         <input id="description" value={description} onChange={handleDescriptonChange}/>
         <label for="category">category:</label>
         <input id="category" value={category} onChange={handleCategoryChange}/>
+        <label for="id">id:</label>
+        <input id="id" value={id} onChange={handle}/>
         <button type="submit" onClick={handleAdd}>add event!</button>
         <button type="submit" onClick={handleDelete}>delete event!</button>
         {/* <button type="submit" onClick={handleEdit}>edit event!</button>
