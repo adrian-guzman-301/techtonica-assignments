@@ -55,6 +55,7 @@ function Form() {
         <button type="submit" onClick={handleAdd}>add event!</button>
         <button type="submit" onClick={handleDelete}>delete event!</button>
         <button type="submit" onClick={handleEdit}>edit event!</button>
+        <button type="submit" onClick={handleGet}>get events!</button>
       </form>
     </>
   )
