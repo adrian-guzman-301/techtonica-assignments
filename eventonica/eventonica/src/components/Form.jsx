@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-function Form() {
+function Form({ setEvents }) {
   const [eventName, setEventName] = useState('')
   const [date, setDate] = useState('') 
   const [description, setDescription] = useState('')
@@ -48,15 +48,33 @@ function Form() {
   function handleDelete(event) {
     console.log('hello delete event!')
     event.preventDefault();
+    fetch(`http://localhost:3000/event/${id}`, 
+      { method: "DELETE" })
+  }
+
+  function handleEdit(event) {
+    console.log('hello edit event!')
+    event.preventDefault();
     fetch(`http://localhost:3000/event/${id}`, {
       headers: {
         'Content-Type': `application/JSON`
       },
-      method: 'DELETE',
+      method: 'PUT',
       body: JSON.stringify({
-        id: id,
+        name: eventName,
+        date: date,
+        description: description,
+        category: category,
+        isFavorite: isFavorite
       })
     })
+  }
+
+  function handleGet(event) {
+    event.preventDefault();
+    fetch(`http://localhost:3000/`)
+    .then(res => res.json())
+    .then(data => setEvents(data))
   }
 
   return (
@@ -74,8 +92,8 @@ function Form() {
         <input id="id" value={id} onChange={handleIdChange}/>
         <button type="button" onClick={handleAdd}>add event!</button>
         <button type="button" onClick={handleDelete}>delete event!</button>
-        {/* <button type="submit" onClick={handleEdit}>edit event!</button>
-        <button type="submit" onClick={handleGet}>get events!</button> */}
+        <button type="button" onClick={handleEdit}>edit event!</button>
+        <button type="button" onClick={handleGet}>get events!</button>
       </form>
     </>
   )
