@@ -19,7 +19,7 @@ function App() {
       {events.map(event => {
        return <EventCard event={event}/>
       })}
-      <Form />
+      <Form setEvents={setEvents}/>
     </>
   )
 }
