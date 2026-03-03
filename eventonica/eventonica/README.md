@@ -1,16 +1,60 @@
-# React + Vite
+# Eventonica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An event management app built with React, Express, and PostgreSQL. Users can add, edit, and delete events through a form interface.
 
-Currently, two official plugins are available:
+## Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend:** React (Vite)
+- **Backend:** Express.js
+- **Database:** PostgreSQL
+- **Packages:** pg, cors
 
-## React Compiler
+## Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
+- Node.js
+- PostgreSQL
 
-## Expanding the ESLint configuration
+### Install Dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+From the root directory:
+```
+npm install
+```
+
+### Database Setup
+
+1. Start psql and create the database:
+```
+psql -U your_username postgres
+CREATE DATABASE events;
+\c events
+```
+
+2. Create the events table:
+```sql
+CREATE TABLE events (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR,
+  date DATE,
+  description VARCHAR,
+  category VARCHAR,
+  isfavorite BOOLEAN
+);
+```
+
+## Running the App
+
+### Start the backend server
+From the root directory:
+```
+node server/server.js
+```
+Server runs on `http://localhost:3000`
+
+### Start the frontend
+In a separate terminal, from the root directory:
+```
+npm run dev
+```
+App runs on `http://localhost:5173`
